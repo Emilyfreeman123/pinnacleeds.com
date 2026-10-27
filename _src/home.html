@@ -1,5 +1,10 @@
   <!-- 1. Hero -->
   <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="orb orb-a" data-speed="0.14"></span>
+      <span class="orb orb-b" data-speed="-0.1"></span>
+      <canvas class="net" data-speed="0.1"></canvas>
+    </div>
     <div class="wrap hero-grid">
       <div>
         <p class="eyebrow">{{hero_eyebrow}}</p>
@@ -17,10 +22,11 @@
         <div class="fact"><dt>{{fact4_l}}</dt><dd><bdi>{{fact4_v}}</bdi></dd></div>
       </dl>
     </div>
+    <button class="motion-btn" type="button" hidden data-pause="{{motion_pause}}" data-play="{{motion_play}}"><span class="ico" aria-hidden="true"></span><span class="lbl">{{motion_pause}}</span></button>
   </section>
 
   <!-- 2. Who we serve -->
-  <section id="serve" class="rule-top" aria-labelledby="serve-title">
+  <section id="serve" class="sheet sheet-white" aria-labelledby="serve-title">
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">{{serve_eyebrow}}</p>
@@ -28,15 +34,16 @@
         <p class="lede">{{serve_lede}}</p>
       </div>
       <div class="tracks">
-        <article class="track"><span class="num" aria-hidden="true">01</span><h3>{{t1_h}}</h3><p>{{t1_p}}</p></article>
-        <article class="track"><span class="num" aria-hidden="true">02</span><h3>{{t2_h}}</h3><p>{{t2_p}}</p></article>
-        <article class="track"><span class="num" aria-hidden="true">03</span><h3>{{t3_h}}</h3><p>{{t3_p}}</p></article>
+        <article class="track"><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="9" r="3.5"/><circle cx="8" cy="23" r="3.5"/><circle cx="24" cy="23" r="3.5"/><path d="M14 12l-4 8M18 12l4 8M12 23h8"/></svg></span><h3>{{t1_h}}</h3><p>{{t1_p}}</p></article>
+        <article class="track"><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13 16 6l12 7M7 13v11M13 13v11M19 13v11M25 13v11M4 26h24"/></svg></span><h3>{{t2_h}}</h3><p>{{t2_p}}</p></article>
+        <article class="track"><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="11"/><path d="M5 16h22M16 5c-4 4-4 18 0 22M16 5c4 4 4 18 0 22"/></svg></span><h3>{{t3_h}}</h3><p>{{t3_p}}</p></article>
       </div>
     </div>
   </section>
 
   <!-- 3. How we work -->
-  <section id="approach" class="dark" aria-labelledby="approach-title">
+  <section id="approach" class="sheet sheet-dark dots" aria-labelledby="approach-title">
+    <span class="orb orb-c" data-speed="-0.12" aria-hidden="true"></span>
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">{{appr_eyebrow}}</p>
@@ -55,7 +62,7 @@
   </section>
 
   <!-- 4. Frameworks -->
-  <section id="frameworks" aria-labelledby="fw-title">
+  <section id="frameworks" class="sheet sheet-mist" aria-labelledby="fw-title">
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">{{fw_eyebrow}}</p>
@@ -91,7 +98,7 @@
   </section>
 
   <!-- 5. Leadership -->
-  <section id="leadership" class="rule-top" aria-labelledby="lead-title">
+  <section id="leadership" class="sheet sheet-white" aria-labelledby="lead-title">
     <div class="wrap lead-grid">
       <div class="lead-copy">
         <p class="eyebrow">{{lead_eyebrow}}</p>
@@ -101,6 +108,7 @@
       </div>
       <div>
         <figure class="photo">
+          <span class="photo-back" data-speed="0.07" aria-hidden="true"></span>
           <img src="/assets/leadership.webp" width="1600" height="900" alt="{{photo_alt}}" loading="lazy" />
         </figure>
         <ul class="people">
@@ -113,7 +121,8 @@
   </section>
 
   <!-- 6. Contact -->
-  <section id="contact" class="dark" aria-labelledby="contact-title">
+  <section id="contact" class="sheet sheet-dark dots" aria-labelledby="contact-title">
+    <span class="orb orb-d" data-speed="0.1" aria-hidden="true"></span>
     <div class="wrap contact-grid">
       <div>
         <p class="eyebrow">{{contact_eyebrow}}</p>

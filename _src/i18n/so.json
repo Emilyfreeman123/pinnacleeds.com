@@ -116,5 +116,8 @@
   "a11y_h2c": "Jawaab-celin iyo caawimaad",
   "a11y_feedback": "Haddii aad dhibaato ku qabto qayb kasta oo goobtan ka mid ah, ama aad u baahan tahay macluumaadka qaab kale, fadlan ku qor info@pinnacleeds.com adigoo sharraxaya bogga iyo dhibaatada. Waxaan ku dadaalnaa inaan ka jawaabno shan maalmood oo shaqo gudahood.",
   "a11y_updated": "Dib-u-eegistii ugu dambeysay: 27 Oktoobar 2026.",
-  "back_home": "Ku laabo bogga hore"
+  "back_home": "Ku laabo bogga hore",
+  "motion_pause": "Jooji dhaqdhaqaaqa",
+  "motion_play": "Bilow dhaqdhaqaaqa",
+  "a11y_li6": "Animation-yada waa la joojin karaa, waxayna si toos ah u istaagaan haddii qalabkaaga lagu dejiyay inuu dhaqdhaqaaqa yareeyo."
 }

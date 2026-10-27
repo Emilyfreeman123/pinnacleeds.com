@@ -116,5 +116,8 @@
   "a11y_h2c": "Geri bildirim ve yardım",
   "a11y_feedback": "Bu sitenin herhangi bir bölümünü kullanmakta zorlanıyorsanız veya bilgiyi başka bir biçimde almak istiyorsanız info@pinnacleeds.com adresine yazın. Lütfen sayfayı ve sorunu açıklayın. Beş iş günü içinde yanıt vermeyi hedefliyoruz.",
   "a11y_updated": "Son inceleme: 27 Ekim 2026.",
-  "back_home": "Ana sayfaya dön"
+  "back_home": "Ana sayfaya dön",
+  "motion_pause": "Animasyonu duraklat",
+  "motion_play": "Animasyonu oynat",
+  "a11y_li6": "Animasyonlar duraklatılabilir ve cihazınız hareketi azaltacak şekilde ayarlıysa otomatik olarak durur."
 }

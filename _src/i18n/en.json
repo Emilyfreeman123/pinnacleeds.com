@@ -116,5 +116,8 @@
   "a11y_h2c": "Feedback and assistance",
   "a11y_feedback": "If you have trouble using any part of this site, or need information in another format, email info@pinnacleeds.com. Please describe the page and the problem. We aim to respond within five business days.",
   "a11y_updated": "Last reviewed: October 27, 2026.",
-  "back_home": "Back to home"
+  "back_home": "Back to home",
+  "motion_pause": "Pause animation",
+  "motion_play": "Play animation",
+  "a11y_li6": "Animations can be paused, and they stop automatically if your device is set to reduce motion."
 }
