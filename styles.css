@@ -258,19 +258,24 @@ h3 { font-size: 1.25rem; letter-spacing: -0.02em; line-height: 1.2; }
 .fw-list span:not(.abbr) { color: var(--text-soft); font-size: 0.95rem; }
 
 /* ---------- Leadership ---------- */
-.lead-grid { display: grid; grid-template-columns: 1fr 1.7fr; gap: clamp(2.5rem, 6vw, 5rem); align-items: center; }
+.lead-grid { display: grid; grid-template-columns: 1fr 1.25fr; gap: clamp(2.5rem, 6vw, 5rem); align-items: center; }
 .lead-copy h2 { margin-bottom: 1.25rem; }
 .lead-copy p { color: var(--text-soft); margin-bottom: 1.1rem; max-width: 30rem; }
-.photo { position: relative; isolation: isolate; }
+.team { position: relative; isolation: isolate; }
 .photo-back {
-  position: absolute; z-index: -1; inset-block: 1.75rem -1.5rem; inset-inline: 1.5rem -1.5rem; border-radius: 1.75rem;
+  position: absolute; z-index: -1; inset-block: 2.5rem -1.5rem; inset-inline: 1.5rem -1.5rem; border-radius: 1.75rem;
   background: linear-gradient(145deg, #2b68ff, #8cc8ff); opacity: 0.9;
 }
-.photo img { width: 100%; height: auto; border-radius: 1.5rem; border: 1px solid var(--line); box-shadow: 0 30px 60px -22px rgba(8, 21, 58, 0.5); background: var(--white); }
-.people { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem; }
-.people li { border-top: 2px solid var(--blue); padding-top: 0.8rem; }
-.people strong { display: block; font-size: 1.02rem; font-weight: 600; letter-spacing: -0.01em; overflow-wrap: anywhere; }
-.people span { font-size: 0.88rem; color: var(--text-soft); }
+.people { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: start; }
+.person {
+  overflow: hidden; border-radius: 1.5rem; background: var(--white); border: 1px solid var(--line);
+  box-shadow: 0 1px 2px rgba(16, 40, 100, 0.06), 0 30px 60px -22px rgba(8, 21, 58, 0.5);
+}
+.person:nth-child(2) { margin-top: 2rem; }
+.person img { width: 100%; height: auto; aspect-ratio: 400 / 490; object-fit: cover; background: var(--cloud); }
+.person-info { padding: 1.25rem 1.4rem 1.5rem; border-top: 3px solid var(--blue); }
+.person-info strong { display: block; font-size: 1.1rem; font-weight: 600; letter-spacing: -0.02em; overflow-wrap: anywhere; }
+.person-info span { display: block; margin-top: 0.3rem; font-size: 0.9rem; color: var(--text-soft); }
 
 /* ---------- Contact ---------- */
 .contact-grid { display: grid; grid-template-columns: 1fr 1.15fr; gap: clamp(2.5rem, 6vw, 5rem); align-items: start; }
@@ -345,11 +350,14 @@ input:focus-visible, textarea:focus-visible { outline: 3px solid var(--sky); out
   .step::before { top: 0.15rem; }
   .fw-group { grid-template-columns: 1fr; gap: 1.25rem; padding: 1.6rem; }
   .photo-back { inset-inline: 1rem -0.75rem; }
+  .person:nth-child(2) { margin-top: 1.25rem; }
   .motion-btn { position: static; margin: 2rem var(--gutter) 0; width: max-content; }
   .hero { padding-bottom: calc(clamp(3rem, 8vw, 5rem) + var(--lap)); }
 }
 @media (max-width: 35em) {
-  .row, .people { grid-template-columns: 1fr; }
+  .row { grid-template-columns: 1fr; }
+  .people { gap: 0.9rem; }
+  .person-info { padding: 1rem 1rem 1.2rem; }
   .fw-list li { grid-template-columns: 1fr; gap: 0.35rem; }
   .facts { padding-inline: 1.2rem; }
 }
