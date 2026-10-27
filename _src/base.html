@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="{{lang}}" dir="{{dir}}">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{page_title}}</title>
+<meta name="description" content="{{page_desc}}" />
+<meta name="google-site-verification" content="7kF-svbmkuGJfxFullcAUjeiLe6QoJWOjuJ-RjmH1lk" />
+<link rel="canonical" href="{{canonical}}" />
+{{hreflang}}
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+<meta property="og:title" content="{{page_title}}" />
+<meta property="og:description" content="{{og_desc}}" />
+<meta property="og:url" content="{{canonical}}" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Pinnacle EDS" />
+<meta property="og:locale" content="{{og_locale}}" />
+{{og_alternates}}
+<meta property="og:image" content="https://pinnacleeds.com/assets/leadership.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{page_title}}" />
+<meta name="twitter:description" content="{{og_desc}}" />
+{{head_extra}}
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="{{font_url}}" rel="stylesheet" />
+<link rel="stylesheet" href="/styles.css" />
+<noscript><style>.nav{position:static!important;display:flex!important;flex-wrap:wrap}.menu-btn{display:none!important}.site-header .wrap{height:auto;flex-wrap:wrap;padding-top:.5rem;padding-bottom:.5rem}</style></noscript>
+</head>
+<body>
+<a class="skip" href="#main">{{skip}}</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{{home}}">
+      <span class="brand-name">Pinnacle <span>EDS</span></span>
+      <span class="brand-sub">{{brand_sub}}</span>
+    </a>
+    <div class="head-tools">
+      <nav class="nav" id="site-nav" aria-label="{{nav_label}}">
+        <a href="{{home}}#serve">{{nav_serve}}</a>
+        <a href="{{home}}#approach">{{nav_approach}}</a>
+        <a href="{{home}}#frameworks">{{nav_frameworks}}</a>
+        <a href="{{home}}#leadership">{{nav_leadership}}</a>
+        <a class="btn btn-sm" href="{{home}}#contact">{{nav_cta}}</a>
+      </nav>
+      <details class="lang-menu" id="lang-menu">
+        <summary aria-label="{{lang_label}}: {{lang_name}}">{{lang_name}}</summary>
+        <ul class="lang-list">
+{{lang_items}}
+        </ul>
+      </details>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">{{menu}}</button>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+{{content}}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <span class="brand-name">Pinnacle EDS</span>
+        <p>{{footer_tag}}</p>
+      </div>
+      <nav class="foot-links" aria-label="{{foot_nav_label}}">
+        <a href="{{home}}#serve">{{nav_serve}}</a>
+        <a href="{{home}}#frameworks">{{nav_frameworks}}</a>
+        <a href="{{home}}#leadership">{{nav_leadership}}</a>
+        <a href="{{a11y_href}}">{{foot_access}}</a>
+        <a href="mailto:info@pinnacleeds.com">info@pinnacleeds.com</a>
+      </nav>
+    </div>
+    <p class="disclaimer">{{disclaimer}}</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var btn = document.querySelector('.menu-btn');
+  var nav = document.getElementById('site-nav');
+  var lm = document.getElementById('lang-menu');
+  function closeNav() { nav.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); }
+  btn.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function (e) { if (e.target.tagName === 'A') closeNav(); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape') return;
+    if (lm.open) { lm.open = false; lm.querySelector('summary').focus(); }
+    if (nav.classList.contains('open')) { closeNav(); btn.focus(); }
+  });
+  document.addEventListener('click', function (e) { if (lm.open && !lm.contains(e.target)) lm.open = false; });
+{{scripts_extra}}
+})();
+</script>
+</body>
+</html>

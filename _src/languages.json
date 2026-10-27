@@ -1,0 +1,9 @@
+[
+  {"code": "en", "name": "English",   "dir": "ltr", "locale": "en_US", "fonts": []},
+  {"code": "ar", "name": "العربية",   "dir": "rtl", "locale": "ar_AR", "fonts": ["Noto+Naskh+Arabic:wght@400;500;600", "Noto+Sans+Arabic:wght@400;500;600;700"]},
+  {"code": "es", "name": "Español",   "dir": "ltr", "locale": "es_ES", "fonts": []},
+  {"code": "tr", "name": "Türkçe",    "dir": "ltr", "locale": "tr_TR", "fonts": []},
+  {"code": "fr", "name": "Français",  "dir": "ltr", "locale": "fr_FR", "fonts": []},
+  {"code": "pt", "name": "Português", "dir": "ltr", "locale": "pt_BR", "fonts": []},
+  {"code": "so", "name": "Soomaali",  "dir": "ltr", "locale": "so_SO", "fonts": []}
+]

@@ -1,8 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://pinnacleeds.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pinnacleeds.com/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pinnacleeds.com/ar/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pinnacleeds.com/es/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pinnacleeds.com/tr/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pinnacleeds.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pinnacleeds.com/pt/" />
+    <xhtml:link rel="alternate" hreflang="so" href="https://pinnacleeds.com/so/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pinnacleeds.com/" />
     <lastmod>2026-10-27</lastmod>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://pinnacleeds.com/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pinnacleeds.com/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pinnacleeds.com/ar/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pinnacleeds.com/es/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pinnacleeds.com/tr/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pinnacleeds.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pinnacleeds.com/pt/" />
+    <xhtml:link rel="alternate" hreflang="so" href="https://pinnacleeds.com/so/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pinnacleeds.com/" />
+    <lastmod>2026-10-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pinnacleeds.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pinnacleeds.com/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pinnacleeds.com/ar/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pinnacleeds.com/es/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pinnacleeds.com/tr/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pinnacleeds.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pinnacleeds.com/pt/" />
+    <xhtml:link rel="alternate" hreflang="so" href="https://pinnacleeds.com/so/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pinnacleeds.com/" />
+    <lastmod>2026-10-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pinnacleeds.com/tr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pinnacleeds.com/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pinnacleeds.com/ar/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pinnacleeds.com/es/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pinnacleeds.com/tr/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pinnacleeds.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pinnacleeds.com/pt/" />
+    <xhtml:link rel="alternate" hreflang="so" href="https://pinnacleeds.com/so/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pinnacleeds.com/" />
+    <lastmod>2026-10-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pinnacleeds.com/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pinnacleeds.com/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pinnacleeds.com/ar/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pinnacleeds.com/es/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pinnacleeds.com/tr/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pinnacleeds.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pinnacleeds.com/pt/" />
+    <xhtml:link rel="alternate" hreflang="so" href="https://pinnacleeds.com/so/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pinnacleeds.com/" />
+    <lastmod>2026-10-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pinnacleeds.com/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pinnacleeds.com/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pinnacleeds.com/ar/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pinnacleeds.com/es/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pinnacleeds.com/tr/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pinnacleeds.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pinnacleeds.com/pt/" />
+    <xhtml:link rel="alternate" hreflang="so" href="https://pinnacleeds.com/so/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pinnacleeds.com/" />
+    <lastmod>2026-10-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pinnacleeds.com/so/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pinnacleeds.com/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pinnacleeds.com/ar/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pinnacleeds.com/es/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pinnacleeds.com/tr/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pinnacleeds.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pinnacleeds.com/pt/" />
+    <xhtml:link rel="alternate" hreflang="so" href="https://pinnacleeds.com/so/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pinnacleeds.com/" />
+    <lastmod>2026-10-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pinnacleeds.com/accessibility/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pinnacleeds.com/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pinnacleeds.com/ar/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pinnacleeds.com/es/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pinnacleeds.com/tr/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pinnacleeds.com/fr/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pinnacleeds.com/pt/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="so" href="https://pinnacleeds.com/so/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pinnacleeds.com/accessibility/" />
+    <lastmod>2026-10-27</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://pinnacleeds.com/ar/accessibility/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pinnacleeds.com/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pinnacleeds.com/ar/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pinnacleeds.com/es/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pinnacleeds.com/tr/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pinnacleeds.com/fr/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pinnacleeds.com/pt/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="so" href="https://pinnacleeds.com/so/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pinnacleeds.com/accessibility/" />
+    <lastmod>2026-10-27</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://pinnacleeds.com/es/accessibility/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pinnacleeds.com/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pinnacleeds.com/ar/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pinnacleeds.com/es/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pinnacleeds.com/tr/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pinnacleeds.com/fr/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pinnacleeds.com/pt/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="so" href="https://pinnacleeds.com/so/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pinnacleeds.com/accessibility/" />
+    <lastmod>2026-10-27</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://pinnacleeds.com/tr/accessibility/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pinnacleeds.com/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pinnacleeds.com/ar/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pinnacleeds.com/es/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pinnacleeds.com/tr/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pinnacleeds.com/fr/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pinnacleeds.com/pt/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="so" href="https://pinnacleeds.com/so/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pinnacleeds.com/accessibility/" />
+    <lastmod>2026-10-27</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://pinnacleeds.com/fr/accessibility/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pinnacleeds.com/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pinnacleeds.com/ar/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pinnacleeds.com/es/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pinnacleeds.com/tr/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pinnacleeds.com/fr/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pinnacleeds.com/pt/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="so" href="https://pinnacleeds.com/so/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pinnacleeds.com/accessibility/" />
+    <lastmod>2026-10-27</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://pinnacleeds.com/pt/accessibility/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pinnacleeds.com/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pinnacleeds.com/ar/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pinnacleeds.com/es/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pinnacleeds.com/tr/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pinnacleeds.com/fr/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pinnacleeds.com/pt/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="so" href="https://pinnacleeds.com/so/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pinnacleeds.com/accessibility/" />
+    <lastmod>2026-10-27</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://pinnacleeds.com/so/accessibility/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pinnacleeds.com/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pinnacleeds.com/ar/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pinnacleeds.com/es/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pinnacleeds.com/tr/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pinnacleeds.com/fr/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pinnacleeds.com/pt/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="so" href="https://pinnacleeds.com/so/accessibility/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pinnacleeds.com/accessibility/" />
+    <lastmod>2026-10-27</lastmod>
+    <priority>0.3</priority>
   </url>
 </urlset>
