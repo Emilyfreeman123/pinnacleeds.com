@@ -54,7 +54,7 @@ def build_page(lang, page):
     code = lang["code"]
     t = load(code)
     esc = {k: html.escape(v, quote=True) for k, v in t.items()}
-    fonts = ["Inter:wght@400;500;600;700", "Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600"] + lang["fonts"]
+    fonts = ["Inter:wght@400;500;600;700"] + lang["fonts"]
     font_url = "https://fonts.googleapis.com/css2?" + "&".join("family=" + f for f in fonts) + "&display=swap"
 
     hreflang = "\n".join(
@@ -122,4 +122,5 @@ def build_sitemap():
 if __name__ == "__main__":
     built = [build_page(l, p) for l in LANGS if (SRC / "i18n" / f"{l['code']}.json").exists() for p in PAGES]
     build_sitemap()
+    (ROOT / "site.js").write_text((SRC / "site.js").read_text(encoding="utf-8"), encoding="utf-8")
     print(f"built {len(built)} pages + sitemap.xml")

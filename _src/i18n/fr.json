@@ -116,5 +116,8 @@
   "a11y_h2c": "Commentaires et assistance",
   "a11y_feedback": "Si vous rencontrez des difficultés avec une partie de ce site, ou si vous avez besoin des informations dans un autre format, écrivez à info@pinnacleeds.com en décrivant la page et le problème. Nous visons à répondre sous cinq jours ouvrables.",
   "a11y_updated": "Dernière révision : 27 octobre 2026.",
-  "back_home": "Retour à l'accueil"
+  "back_home": "Retour à l'accueil",
+  "motion_pause": "Mettre l'animation en pause",
+  "motion_play": "Lancer l'animation",
+  "a11y_li6": "Les animations peuvent être mises en pause et s'arrêtent automatiquement si votre appareil est réglé pour réduire les animations."
 }
