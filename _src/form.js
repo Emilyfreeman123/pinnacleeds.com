@@ -3,15 +3,15 @@
   if (form && window.fetch) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      if (form.elements._honey.value) return; /* bot filled the hidden field */
+      if (form.elements.botcheck.checked) return; /* bot ticked the hidden box */
       var send = form.querySelector('button[type="submit"]');
       var v = function (n) { return (form.elements[n].value || '').trim(); };
       var org = v('Organization'), type = v('Organization type');
-      /* Fixed field order = the row order of the table in the email */
+      /* Fixed field order = the order of rows in the email */
       var data = {
-        _subject: 'New inquiry: ' + v('Name') + (org ? ' (' + org + ')' : '') + ' | ' + type + ' | Pinnacle EDS',
-        _template: 'table',
-        _captcha: 'false',
+        access_key: v('access_key'),
+        subject: 'New inquiry: ' + v('Name') + (org ? ' (' + org + ')' : '') + ' | ' + type,
+        from_name: 'Pinnacle EDS website',
         Name: v('Name'),
         email: v('email'),
         Organization: org || '-',
@@ -23,12 +23,12 @@
       };
       send.disabled = true;
       status.className = 'status';
-      fetch(form.getAttribute('data-ajax'), {
+      fetch(form.action, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(data)
       })
-        .then(function (r) { return r.json().then(function (j) { if (!r.ok || String(j.success) !== 'true') throw new Error(j.message); }); })
+        .then(function (r) { return r.json().then(function (j) { if (!r.ok || !j.success) throw new Error(j.message); }); })
         .then(function () {
           form.reset();
           status.textContent = {{f_ok_js}};

@@ -194,13 +194,13 @@
           <div><dt>{{meta_min}}</dt><dd>{{meta_min_v}}</dd></div>
         </dl>
       </div>
-      <form id="contact-form" action="https://formsubmit.co/edspinnacle@gmail.com" method="POST" aria-labelledby="contact-title" data-ajax="https://formsubmit.co/ajax/edspinnacle@gmail.com" data-lang-name="{{lang_name}}">
-        <input type="hidden" name="_subject" value="New inquiry — Pinnacle EDS website" />
-        <input type="hidden" name="_template" value="table" />
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="{{canonical}}#contact" />
+      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" aria-labelledby="contact-title" data-lang-name="{{lang_name}}">
+        <input type="hidden" name="access_key" value="{{form_key}}" />
+        <input type="hidden" name="subject" value="New inquiry from the Pinnacle EDS website" />
+        <input type="hidden" name="from_name" value="Pinnacle EDS website" />
+        <input type="hidden" name="redirect" value="{{canonical}}#contact" />
         <input type="hidden" name="Language" value="{{lang_name}}" />
-        <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <input class="hp" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <div class="row">
           <label>{{f_name}}<input type="text" name="Name" autocomplete="name" required /></label>
           <label>{{f_email}}<input type="email" name="email" autocomplete="email" dir="ltr" required /></label>

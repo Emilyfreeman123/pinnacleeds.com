@@ -361,13 +361,13 @@
           <div><dt>Wasaaradaha</dt><dd>Fadlan ku qor dalkaaga iyo wasaaraddaada fariintaada.</dd></div>
         </dl>
       </div>
-      <form id="contact-form" action="https://formsubmit.co/edspinnacle@gmail.com" method="POST" aria-labelledby="contact-title" data-ajax="https://formsubmit.co/ajax/edspinnacle@gmail.com" data-lang-name="Soomaali">
-        <input type="hidden" name="_subject" value="New inquiry — Pinnacle EDS website" />
-        <input type="hidden" name="_template" value="table" />
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="https://pinnacleeds.com/so/#contact" />
+      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" aria-labelledby="contact-title" data-lang-name="Soomaali">
+        <input type="hidden" name="access_key" value="WEB3FORMS_ACCESS_KEY" />
+        <input type="hidden" name="subject" value="New inquiry from the Pinnacle EDS website" />
+        <input type="hidden" name="from_name" value="Pinnacle EDS website" />
+        <input type="hidden" name="redirect" value="https://pinnacleeds.com/so/#contact" />
         <input type="hidden" name="Language" value="Soomaali" />
-        <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <input class="hp" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <div class="row">
           <label>Magaca<input type="text" name="Name" autocomplete="name" required /></label>
           <label>Iimaylka<input type="email" name="email" autocomplete="email" dir="ltr" required /></label>
@@ -440,15 +440,15 @@
   if (form && window.fetch) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      if (form.elements._honey.value) return; /* bot filled the hidden field */
+      if (form.elements.botcheck.checked) return; /* bot ticked the hidden box */
       var send = form.querySelector('button[type="submit"]');
       var v = function (n) { return (form.elements[n].value || '').trim(); };
       var org = v('Organization'), type = v('Organization type');
-      /* Fixed field order = the row order of the table in the email */
+      /* Fixed field order = the order of rows in the email */
       var data = {
-        _subject: 'New inquiry: ' + v('Name') + (org ? ' (' + org + ')' : '') + ' | ' + type + ' | Pinnacle EDS',
-        _template: 'table',
-        _captcha: 'false',
+        access_key: v('access_key'),
+        subject: 'New inquiry: ' + v('Name') + (org ? ' (' + org + ')' : '') + ' | ' + type,
+        from_name: 'Pinnacle EDS website',
         Name: v('Name'),
         email: v('email'),
         Organization: org || '-',
@@ -460,12 +460,12 @@
       };
       send.disabled = true;
       status.className = 'status';
-      fetch(form.getAttribute('data-ajax'), {
+      fetch(form.action, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(data)
       })
-        .then(function (r) { return r.json().then(function (j) { if (!r.ok || String(j.success) !== 'true') throw new Error(j.message); }); })
+        .then(function (r) { return r.json().then(function (j) { if (!r.ok || !j.success) throw new Error(j.message); }); })
         .then(function () {
           form.reset();
           status.textContent = "Mahadsanid. Fariintaada waa la diray, waxaana kula soo xiriiri doonnaa dhawaan.";
