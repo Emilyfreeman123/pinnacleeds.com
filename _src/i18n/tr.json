@@ -94,7 +94,7 @@
   "f_send": "Mesajı gönder",
   "f_note": "Bilgilerinizi yalnızca bu talebi yanıtlamak için kullanırız.",
   "f_ok": "Teşekkürler. Mesajınız gönderildi, kısa süre içinde sizinle iletişime geçeceğiz.",
-  "f_err": "Bir sorun oluştu. Lütfen doğrudan info@pinnacleeds.com adresine yazın.",
+  "f_err": "Bir sorun oluştu. Lütfen doğrudan edspinnacle@gmail.com adresine yazın.",
   "footer_tag": "Kurumlar ve hükümetler için özel eğitim altyapısı.",
   "foot_nav_label": "Alt bilgi",
   "foot_access": "Erişilebilirlik",
@@ -112,7 +112,7 @@
   "a11y_h2b": "Bilinen sınırlamalar",
   "a11y_limits": "Bazı çeviriler, anadili konuşanlar tarafından hâlâ incelenmekte olan taslaklardır.",
   "a11y_h2c": "Geri bildirim ve yardım",
-  "a11y_feedback": "Bu sitenin herhangi bir bölümünü kullanmakta zorlanıyorsanız veya bilgiyi başka bir biçimde almak istiyorsanız info@pinnacleeds.com adresine yazın. Lütfen sayfayı ve sorunu açıklayın. Beş iş günü içinde yanıt vermeyi hedefliyoruz.",
+  "a11y_feedback": "Bu sitenin herhangi bir bölümünü kullanmakta zorlanıyorsanız veya bilgiyi başka bir biçimde almak istiyorsanız edspinnacle@gmail.com adresine yazın. Lütfen sayfayı ve sorunu açıklayın. Beş iş günü içinde yanıt vermeyi hedefliyoruz.",
   "a11y_updated": "Son inceleme: 27 Ekim 2026.",
   "back_home": "Ana sayfaya dön",
   "motion_pause": "Animasyonu duraklat",
@@ -167,7 +167,7 @@
   "faq6_q": "Ekibiniz hangi eyaletlerde lisanslı?",
   "faq6_a": "Uygulayıcılarımız Minnesota, Virginia, Kansas, Maryland ve Hawaii'de Lisanslı Davranış Analisti, California, Minnesota ve Hawaii'de ise öğretmenlik lisansına sahiptir.",
   "faq7_q": "Nasıl başlarız?",
-  "faq7_a": "Bize mesaj gönderin veya info@pinnacleeds.com adresine yazın; bir tanışma görüşmesi planlamak için size dönüş yapalım. Bakanlıklardan ülke ve bakanlık adını belirtmelerini rica ederiz.",
+  "faq7_a": "Bize mesaj gönderin veya edspinnacle@gmail.com adresine yazın; bir tanışma görüşmesi planlamak için size dönüş yapalım. Bakanlıklardan ülke ve bakanlık adını belirtmelerini rica ederiz.",
   "about_title": "Hakkımızda | Pinnacle EDS",
   "about_meta": "Kim olduğumuz, Pinnacle EDS'in neden var olduğu ve firmayı yöneten genel müdürler: Emily Freeman, BCBA ve Ahmed Elmi.",
   "ab_eyebrow": "Pinnacle EDS hakkında",
@@ -235,5 +235,9 @@
   "st_md": "Maryland",
   "st_hi": "Hawaii",
   "st_ca": "California",
-  "ab_team_note": "Davranış analistleri, özel eğitim uzmanları, eğitim liderleri ve uygulama profesyonellerinden oluşan multidisipliner ekipleri uzaktan ve yerinde görevlendiriyoruz. Yerel hukuki veya mevzuata ilişkin yorum gerektiğinde, o yetki alanındaki nitelikli hukuk danışmanlarıyla birlikte çalışıyoruz."
+  "ab_team_note": "Davranış analistleri, özel eğitim uzmanları, eğitim liderleri ve uygulama profesyonellerinden oluşan multidisipliner ekipleri uzaktan ve yerinde görevlendiriyoruz. Yerel hukuki veya mevzuata ilişkin yorum gerektiğinde, o yetki alanındaki nitelikli hukuk danışmanlarıyla birlikte çalışıyoruz.",
+  "f_country": "Ülke",
+  "f_type": "Kurum türü",
+  "f_type_ph": "Birini seçin",
+  "f_type_other": "Diğer"
 }

@@ -84,7 +84,7 @@ def build_page(lang, page):
         ctx["scripts_extra"] = render(FORM_JS, ctx)
         ld = {
             "@context": "https://schema.org", "@type": "ProfessionalService", "name": "Pinnacle EDS",
-            "url": SITE, "email": "info@pinnacleeds.com", "foundingDate": "2026", "inLanguage": code,
+            "url": SITE, "email": "edspinnacle@gmail.com", "foundingDate": "2026", "inLanguage": code,
             "description": t["meta_desc"],
             "areaServed": ["United States", "Qatar", "United Arab Emirates", "Saudi Arabia", "MENA Region"],
             "knowsAbout": ["Applied Behavior Analysis", "Special Education", "Government Education Reform",

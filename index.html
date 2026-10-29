@@ -38,7 +38,7 @@
   "@type": "ProfessionalService",
   "name": "Pinnacle EDS",
   "url": "https://pinnacleeds.com",
-  "email": "info@pinnacleeds.com",
+  "email": "edspinnacle@gmail.com",
   "foundingDate": "2026",
   "inLanguage": "en",
   "description": "Pinnacle EDS designs and implements the clinical, educational, and policy systems that health systems, school districts, and governments use to deliver consistent special education and ABA services.",
@@ -117,7 +117,7 @@
       "name": "How do we get started?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Send us a message or email info@pinnacleeds.com, and we will reply to schedule a discovery call. Ministries, please include your country and ministry."
+        "text": "Send us a message or email edspinnacle@gmail.com, and we will reply to schedule a discovery call. Ministries, please include your country and ministry."
       }
     }
   ]
@@ -342,7 +342,7 @@
         <details class="faq-item"><summary><h3>Do you work outside the United States?</h3></summary><p>Yes. We work virtually and on site, including with governments in the Gulf region and the wider Middle East and North Africa. When local legal or regulatory interpretation is needed, we coordinate with qualified counsel in that jurisdiction.</p></details>
         <details class="faq-item"><summary><h3>Do you provide therapy or services directly to children?</h3></summary><p>No. We provide consulting and systems design for organizations. Clinical and educational recommendations are carried out by your own appropriately licensed professionals.</p></details>
         <details class="faq-item"><summary><h3>Where is your team licensed?</h3></summary><p>Our practitioners hold Licensed Behavior Analyst credentials in Minnesota, Virginia, Kansas, Maryland, and Hawaii, and teaching licensure in California, Minnesota, and Hawaii.</p></details>
-        <details class="faq-item"><summary><h3>How do we get started?</h3></summary><p>Send us a message or email info@pinnacleeds.com, and we will reply to schedule a discovery call. Ministries, please include your country and ministry.</p></details>
+        <details class="faq-item"><summary><h3>How do we get started?</h3></summary><p>Send us a message or email edspinnacle@gmail.com, and we will reply to schedule a discovery call. Ministries, please include your country and ministry.</p></details>
       </div>
     </div>
   </section>
@@ -356,21 +356,36 @@
         <h2 id="contact-title">Start with a discovery conversation.</h2>
         <p class="lede">Tell us about your organization and what you are looking to build or reform. We will respond to schedule a call.</p>
         <dl class="contact-meta">
-          <div><dt>Email</dt><dd><a href="mailto:info@pinnacleeds.com">info@pinnacleeds.com</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:edspinnacle@gmail.com">edspinnacle@gmail.com</a></dd></div>
           <div><dt>Engagements</dt><dd>Virtual and on-site, United States and international</dd></div>
           <div><dt>Ministries</dt><dd>Please include your country and ministry in your message.</dd></div>
         </dl>
       </div>
-      <form id="contact-form" action="https://formspree.io/f/mkoaapne" method="POST" aria-labelledby="contact-title">
-        <input type="hidden" name="_subject" value="New inquiry — Pinnacle EDS (en)" />
-        <input type="hidden" name="language" value="en" />
-        <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <form id="contact-form" action="https://formsubmit.co/edspinnacle@gmail.com" method="POST" aria-labelledby="contact-title" data-ajax="https://formsubmit.co/ajax/edspinnacle@gmail.com" data-lang-name="English">
+        <input type="hidden" name="_subject" value="New inquiry — Pinnacle EDS website" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://pinnacleeds.com/#contact" />
+        <input type="hidden" name="Language" value="English" />
+        <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <div class="row">
-          <label>Name<input type="text" name="name" autocomplete="name" required /></label>
+          <label>Name<input type="text" name="Name" autocomplete="name" required /></label>
           <label>Email<input type="email" name="email" autocomplete="email" dir="ltr" required /></label>
         </div>
-        <label>Organization <span class="req">(optional)</span><input type="text" name="organization" autocomplete="organization" /></label>
-        <label>How can we help?<textarea name="message" required></textarea></label>
+        <div class="row">
+          <label><span>Organization <span class="req">(optional)</span></span><input type="text" name="Organization" autocomplete="organization" /></label>
+          <label><span>Country <span class="req">(optional)</span></span><input type="text" name="Country" autocomplete="country-name" /></label>
+        </div>
+        <label>Organization type
+          <select name="Organization type" required>
+            <option value="" disabled selected>Select one</option>
+            <option value="Health system or multi-site provider">Health systems and multi-site providers</option>
+            <option value="State agency or school district">State agencies and school districts</option>
+            <option value="Government or ministry of education">Governments and ministries of education</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+        <label>How can we help?<textarea name="Message" required></textarea></label>
         <div class="form-foot">
           <button class="btn" type="submit">Send message</button>
           <small>We use your details only to respond to this inquiry.</small>
@@ -396,7 +411,7 @@
         <a href="/about/#leadership">Leadership</a>
         <a href="/#faq">FAQ</a>
         <a href="/accessibility/">Accessibility</a>
-        <a href="mailto:info@pinnacleeds.com">info@pinnacleeds.com</a>
+        <a href="mailto:edspinnacle@gmail.com">edspinnacle@gmail.com</a>
       </nav>
     </div>
     <p class="disclaimer">© 2026 Pinnacle EDS. Pinnacle EDS provides consulting and systems design services only. Our services do not constitute individualized medical care, psychological treatment, legal advice, or certification guarantees. All clinical and educational recommendations are intended for organizational and programmatic use and should be implemented under the supervision of appropriately licensed professionals.</p>
@@ -425,18 +440,39 @@
   if (form && window.fetch) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      if (form.elements._honey.value) return; /* bot filled the hidden field */
       var send = form.querySelector('button[type="submit"]');
+      var v = function (n) { return (form.elements[n].value || '').trim(); };
+      var org = v('Organization'), type = v('Organization type');
+      /* Fixed field order = the row order of the table in the email */
+      var data = {
+        _subject: 'New inquiry: ' + v('Name') + (org ? ' (' + org + ')' : '') + ' | ' + type + ' | Pinnacle EDS',
+        _template: 'table',
+        _captcha: 'false',
+        Name: v('Name'),
+        email: v('email'),
+        Organization: org || '-',
+        'Organization type': type,
+        Country: v('Country') || '-',
+        Message: v('Message'),
+        Language: form.getAttribute('data-lang-name'),
+        Page: location.href.split('#')[0]
+      };
       send.disabled = true;
       status.className = 'status';
-      fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
-        .then(function (r) {
-          if (!r.ok) throw new Error();
+      fetch(form.getAttribute('data-ajax'), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(data)
+      })
+        .then(function (r) { return r.json().then(function (j) { if (!r.ok || String(j.success) !== 'true') throw new Error(j.message); }); })
+        .then(function () {
           form.reset();
           status.textContent = "Thank you. Your message has been sent and we will be in touch shortly.";
           status.className = 'status show';
         })
         .catch(function () {
-          status.textContent = "Something went wrong. Please email info@pinnacleeds.com directly.";
+          status.textContent = "Something went wrong. Please email edspinnacle@gmail.com directly.";
           status.className = 'status show err';
         })
         .then(function () { send.disabled = false; });

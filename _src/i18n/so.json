@@ -94,7 +94,7 @@
   "f_send": "Dir fariinta",
   "f_note": "Faahfaahintaada waxaan u adeegsanaa oo kaliya inaan ku jawaabno codsigan.",
   "f_ok": "Mahadsanid. Fariintaada waa la diray, waxaana kula soo xiriiri doonnaa dhawaan.",
-  "f_err": "Wax qalad ah ayaa dhacay. Fadlan si toos ah ugu qor info@pinnacleeds.com.",
+  "f_err": "Wax qalad ah ayaa dhacay. Fadlan si toos ah ugu qor edspinnacle@gmail.com.",
   "footer_tag": "Kaabayaal waxbarasho gaar ah oo loogu talagalay hay'adaha iyo dowladaha.",
   "foot_nav_label": "Hoosta bogga",
   "foot_access": "Helitaanka",
@@ -112,7 +112,7 @@
   "a11y_h2b": "Xaddidaado la yaqaan",
   "a11y_limits": "Qaar ka mid ah tarjumaadaha waa qabyo oo weli ay dib u eegayaan afhayeenno asal ah.",
   "a11y_h2c": "Jawaab-celin iyo caawimaad",
-  "a11y_feedback": "Haddii aad dhibaato ku qabto qayb kasta oo goobtan ka mid ah, ama aad u baahan tahay macluumaadka qaab kale, fadlan ku qor info@pinnacleeds.com adigoo sharraxaya bogga iyo dhibaatada. Waxaan ku dadaalnaa inaan ka jawaabno shan maalmood oo shaqo gudahood.",
+  "a11y_feedback": "Haddii aad dhibaato ku qabto qayb kasta oo goobtan ka mid ah, ama aad u baahan tahay macluumaadka qaab kale, fadlan ku qor edspinnacle@gmail.com adigoo sharraxaya bogga iyo dhibaatada. Waxaan ku dadaalnaa inaan ka jawaabno shan maalmood oo shaqo gudahood.",
   "a11y_updated": "Dib-u-eegistii ugu dambeysay: 27 Oktoobar 2026.",
   "back_home": "Ku laabo bogga hore",
   "motion_pause": "Jooji dhaqdhaqaaqa",
@@ -167,7 +167,7 @@
   "faq6_q": "Kooxdiinnu xaggee bay shati ku haysataa?",
   "faq6_a": "Xirfadlayaashayadu waxay haystaan shatiga Falanqeeyaha Habdhaqanka ee Shatiga leh ee Minnesota, Virginia, Kansas, Maryland iyo Hawaii, iyo shatiga macallinnimada ee California, Minnesota iyo Hawaii.",
   "faq7_q": "Sidee ku bilaabi karnaa?",
-  "faq7_a": "Noo soo dir fariin ama u qor info@pinnacleeds.com, waxaanan kuugu jawaabi doonnaa si aan u ballansanno wada-hadal hordhac ah. Wasaaradaha, fadlan ku dar dalkiinna iyo wasaaraddiinna.",
+  "faq7_a": "Noo soo dir fariin ama u qor edspinnacle@gmail.com, waxaanan kuugu jawaabi doonnaa si aan u ballansanno wada-hadal hordhac ah. Wasaaradaha, fadlan ku dar dalkiinna iyo wasaaraddiinna.",
   "about_title": "Nagu saabsan | Pinnacle EDS",
   "about_meta": "Cidda aan nahay, sababta Pinnacle EDS u jirto, iyo agaasimayaasha guud ee hoggaamiya: Emily Freeman, BCBA, iyo Ahmed Elmi.",
   "ab_eyebrow": "Ku saabsan Pinnacle EDS",
@@ -235,5 +235,9 @@
   "st_md": "Maryland",
   "st_hi": "Hawaii",
   "st_ca": "California",
-  "ab_team_note": "Waxaan dirnaa kooxo xirfado kala duwan leh oo ka kooban falanqeeyeyaal habdhaqan, khubaro waxbarasho gaar ah, hoggaamiyeyaal waxbarasho iyo xirfadlayaal hirgelin, fog iyo goob joog ahaanba. Marka loo baahdo fasiraad sharci ama xeer maxalli ah, waxaan la shaqaynaa la-taliyeyaal sharci oo u qalma maamulkaas."
+  "ab_team_note": "Waxaan dirnaa kooxo xirfado kala duwan leh oo ka kooban falanqeeyeyaal habdhaqan, khubaro waxbarasho gaar ah, hoggaamiyeyaal waxbarasho iyo xirfadlayaal hirgelin, fog iyo goob joog ahaanba. Marka loo baahdo fasiraad sharci ama xeer maxalli ah, waxaan la shaqaynaa la-taliyeyaal sharci oo u qalma maamulkaas.",
+  "f_country": "Dalka",
+  "f_type": "Nooca hay'adda",
+  "f_type_ph": "Mid dooro",
+  "f_type_other": "Kale"
 }
