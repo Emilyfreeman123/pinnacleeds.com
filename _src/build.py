@@ -100,10 +100,15 @@ def build_page(lang, page):
         ctx["page_title"], ctx["page_desc"] = esc["about_title"], esc["about_meta"]
         ctx["scripts_extra"] = ""
         people = [
-            {"@type": "Person", "name": "Emily Freeman", "jobTitle": t["role1"], "honorificSuffix": "BCBA",
+            {"@type": "Person", "name": "Emily Freeman", "jobTitle": t["role1"], "honorificSuffix": "M.Ed., BCBA, LBA",
+             "alumniOf": [{"@type": "CollegeOrUniversity", "name": "University of Hawaii"},
+                          {"@type": "CollegeOrUniversity", "name": "Western Washington University"}],
              "image": SITE + "/assets/emily-freeman.webp", "url": SITE + url_for(code, "about") + "#emily-freeman",
              "worksFor": {"@type": "Organization", "name": "Pinnacle EDS", "url": SITE}},
             {"@type": "Person", "name": "Ahmed Elmi", "jobTitle": t["role2"],
+             "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Hamline University"},
+                          {"@type": "CollegeOrUniversity", "name": "California State University, Fresno"},
+                          {"@type": "CollegeOrUniversity", "name": "State University of New York at Albany"}],
              "image": SITE + "/assets/ahmed-elmi.webp", "url": SITE + url_for(code, "about") + "#ahmed-elmi",
              "worksFor": {"@type": "Organization", "name": "Pinnacle EDS", "url": SITE}},
         ]
