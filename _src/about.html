@@ -1,0 +1,174 @@
+  <!-- 1. Page hero -->
+  <section class="hero hero-page">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="orb orb-a" data-speed="0.14"></span>
+      <span class="orb orb-b" data-speed="-0.1"></span>
+      <canvas class="net" data-speed="0.1"></canvas>
+    </div>
+    <div class="wrap">
+      <p class="eyebrow">{{ab_eyebrow}}</p>
+      <h1>{{ab_h1}}</h1>
+      <p class="lede">{{ab_lede}}</p>
+      <nav class="jump" aria-label="{{ab_jump_label}}">
+        <a href="#story">{{ab_story_eyebrow}}</a>
+        <a href="#leadership">{{nav_leadership}}</a>
+        <a href="#experience">{{ab_exp_eyebrow}}</a>
+        <a href="#credentials">{{ab_cred_eyebrow}}</a>
+      </nav>
+    </div>
+    <button class="motion-btn" type="button" hidden data-pause="{{motion_pause}}" data-play="{{motion_play}}"><span class="ico" aria-hidden="true"></span><span class="lbl">{{motion_pause}}</span></button>
+  </section>
+
+  <!-- 2. Story -->
+  <section id="story" class="sheet sheet-white" aria-labelledby="story-title">
+    <div class="wrap story-grid">
+      <div>
+        <p class="eyebrow">{{ab_story_eyebrow}}</p>
+        <h2 id="story-title">{{ab_story_h2}}</h2>
+      </div>
+      <div class="story-copy">
+        <p>{{ab_story_p1}}</p>
+        <p>{{ab_story_p2}}</p>
+        <blockquote class="pull"><p>{{ab_quote}}</p></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Mission -->
+  <section id="mission" class="sheet sheet-mist" aria-labelledby="mission-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">{{ab_mis_eyebrow}}</p>
+        <h2 id="mission-title">{{ab_mis_h2}}</h2>
+      </div>
+      <div class="tracks">
+        <article class="track"><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="9" r="4"/><path d="M9 28v-6a7 7 0 0 1 14 0v6"/></svg></span><h3>{{m1_h}}</h3><p>{{m1_p}}</p></article>
+        <article class="track"><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="9" r="3.5"/><circle cx="22" cy="9" r="3.5"/><circle cx="16" cy="17" r="2.5"/><path d="M4 27v-4a6 6 0 0 1 9-5M28 27v-4a6 6 0 0 0-9-5M12 28v-1.5a4 4 0 0 1 8 0V28"/></svg></span><h3>{{m2_h}}</h3><p>{{m2_p}}</p></article>
+        <article class="track"><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="11"/><path d="M5 16h22M16 5c-4 4-4 18 0 22M16 5c4 4 4 18 0 22"/></svg></span><h3>{{m3_h}}</h3><p>{{m3_p}}</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Leadership bios -->
+  <section id="leadership" class="sheet sheet-white" aria-labelledby="bios-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">{{nav_leadership}}</p>
+        <h2 id="bios-title">{{ab_lead_h2}}</h2>
+        <p class="lede">{{ab_lead_lede}}</p>
+      </div>
+
+      <article class="bio" id="emily-freeman" aria-labelledby="emily-name">
+        <div class="bio-photo">
+          <span class="photo-back" data-speed="0.06" aria-hidden="true"></span>
+          <img src="/assets/emily-freeman.webp" width="400" height="490" alt="" loading="lazy" />
+        </div>
+        <div class="bio-body">
+          <h3 id="emily-name" dir="ltr">Emily Freeman, BCBA</h3>
+          <p class="bio-role">{{role1}}</p>
+          <p>{{emily_p1}}</p>
+          <p>{{emily_p2}}</p>
+          <h4>{{focus_label}}</h4>
+          <ul class="chips">
+            <li><span class="abbr" dir="ltr">CIA</span>{{cia_n}}</li>
+            <li><span class="abbr" dir="ltr">ISF</span>{{isf_n}}</li>
+            <li><span class="abbr" dir="ltr">SDS</span>{{sds_n}}</li>
+            <li><span class="abbr" dir="ltr">MQAS</span>{{mqas_n}}</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="bio bio-alt" id="ahmed-elmi" aria-labelledby="ahmed-name">
+        <div class="bio-photo">
+          <span class="photo-back" data-speed="0.06" aria-hidden="true"></span>
+          <img src="/assets/ahmed-elmi.webp" width="400" height="490" alt="" loading="lazy" />
+        </div>
+        <div class="bio-body">
+          <h3 id="ahmed-name" dir="ltr">Ahmed Elmi</h3>
+          <p class="bio-role">{{role2}}</p>
+          <p>{{ahmed_p1}}</p>
+          <p>{{ahmed_p2}}</p>
+          <h4>{{focus_label}}</h4>
+          <ul class="chips">
+            <li><span class="abbr" dir="ltr">SESRA</span>{{sesra_n}}</li>
+            <li><span class="abbr" dir="ltr">NWDF</span>{{nwdf_n}}</li>
+            <li><span class="abbr" dir="ltr">GRPA</span>{{grpa_n}}</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 5. Prior experience -->
+  <section id="experience" class="sheet sheet-dark dots" aria-labelledby="exp-title">
+    <span class="orb orb-c" data-speed="-0.12" aria-hidden="true"></span>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">{{ab_exp_eyebrow}}</p>
+        <h2 id="exp-title">{{ab_exp_h2}}</h2>
+        <p class="lede">{{ab_exp_lede}}</p>
+      </div>
+      <div class="exp">
+        <article class="exp-card">
+          <p class="exp-tag">{{x1_tag}}</p>
+          <h3>{{x1_h}}</h3>
+          <p class="exp-meta">{{x1_meta}}</p>
+          <ul><li>{{x1_b1}}</li><li>{{x1_b2}}</li><li>{{x1_b3}}</li><li>{{x1_b4}}</li></ul>
+        </article>
+        <article class="exp-card">
+          <p class="exp-tag">{{x2_tag}}</p>
+          <h3>{{x2_h}}</h3>
+          <p class="exp-meta">{{x2_meta}}</p>
+          <ul><li>{{x2_b1}}</li><li>{{x2_b2}}</li><li>{{x2_b3}}</li><li>{{x2_b4}}</li></ul>
+        </article>
+        <article class="exp-card">
+          <p class="exp-tag">{{x3_tag}}</p>
+          <h3>{{x3_h}}</h3>
+          <p class="exp-meta">{{x3_meta}}</p>
+          <ul><li>{{x3_b1}}</li><li>{{x3_b2}}</li><li>{{x3_b3}}</li><li>{{x3_b4}}</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Credentials -->
+  <section id="credentials" class="sheet sheet-mist" aria-labelledby="cred-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">{{ab_cred_eyebrow}}</p>
+        <h2 id="cred-title">{{ab_cred_h2}}</h2>
+        <p class="lede">{{ab_cred_lede}}</p>
+      </div>
+      <div class="creds">
+        <div class="cred">
+          <h3>{{c1_h}}</h3>
+          <p>{{c1_p}}</p>
+        </div>
+        <div class="cred">
+          <h3>{{c2_h}}</h3>
+          <ul class="states"><li>{{st_mn}}</li><li>{{st_va}}</li><li>{{st_ks}}</li><li>{{st_md}}</li><li>{{st_hi}}</li></ul>
+        </div>
+        <div class="cred">
+          <h3>{{c3_h}}</h3>
+          <ul class="states"><li>{{st_ca}}</li><li>{{st_mn}}</li><li>{{st_hi}}</li></ul>
+        </div>
+        <div class="cred">
+          <h3>{{c4_h}}</h3>
+          <ul class="ticks"><li>{{c4_b1}}</li><li>{{c4_b2}}</li><li>{{c4_b3}}</li></ul>
+        </div>
+      </div>
+      <p class="cred-note">{{ab_team_note}}</p>
+    </div>
+  </section>
+
+  <!-- 7. Call to action -->
+  <section class="sheet sheet-dark dots cta-band" aria-labelledby="cta-title">
+    <span class="orb orb-d" data-speed="0.1" aria-hidden="true"></span>
+    <div class="wrap cta-inner">
+      <div>
+        <h2 id="cta-title">{{contact_h2}}</h2>
+        <p class="lede">{{contact_lede}}</p>
+      </div>
+      <a class="btn" href="{{home}}#contact">{{nav_cta}}</a>
+    </div>
+  </section>

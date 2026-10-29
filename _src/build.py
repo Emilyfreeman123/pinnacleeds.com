@@ -14,11 +14,11 @@ ROOT = SRC.parent
 SITE = "https://pinnacleeds.com"
 LANGS = json.loads((SRC / "languages.json").read_text(encoding="utf-8"))
 BASE = (SRC / "base.html").read_text(encoding="utf-8")
-PAGES = {
-    "home": (SRC / "home.html").read_text(encoding="utf-8"),
-    "accessibility": (SRC / "accessibility.html").read_text(encoding="utf-8"),
-}
+# page name -> URL slug under each language prefix
+SLUGS = {"home": "", "about": "about/", "accessibility": "accessibility/"}
+PAGES = {name: (SRC / f"{name}.html").read_text(encoding="utf-8") for name in SLUGS}
 FORM_JS = (SRC / "form.js").read_text(encoding="utf-8")
+FAQ_COUNT = 7
 EN = json.loads((SRC / "i18n" / "en.json").read_text(encoding="utf-8"))
 
 
@@ -27,7 +27,7 @@ def prefix(code):
 
 
 def url_for(code, page):
-    return prefix(code) + ("" if page == "home" else "accessibility/")
+    return prefix(code) + SLUGS[page]
 
 
 def render(tpl, ctx):
@@ -73,6 +73,8 @@ def build_page(lang, page):
         "lang": code, "dir": lang["dir"], "lang_name": lang["name"], "og_locale": lang["locale"],
         "canonical": SITE + url_for(code, page), "hreflang": hreflang, "og_alternates": og_alts,
         "font_url": html.escape(font_url), "home": prefix(code), "a11y_href": url_for(code, "accessibility"),
+        "about_href": url_for(code, "about"), "home_cur": ' aria-current="page"' if page == "home" else "",
+        "about_cur": ' aria-current="page"' if page == "about" else "",
         "lang_items": "\n".join(items),
         "f_ok_js": json.dumps(t["f_ok"], ensure_ascii=False),
         "f_err_js": json.dumps(t["f_err"], ensure_ascii=False),
@@ -88,6 +90,26 @@ def build_page(lang, page):
             "knowsAbout": ["Applied Behavior Analysis", "Special Education", "Government Education Reform",
                            "Institutional Compliance", "Trauma-Informed Practice"],
         }
+        faq = {
+            "@context": "https://schema.org", "@type": "FAQPage", "inLanguage": code,
+            "mainEntity": [{"@type": "Question", "name": t[f"faq{i}_q"],
+                            "acceptedAnswer": {"@type": "Answer", "text": t[f"faq{i}_a"]}} for i in range(1, FAQ_COUNT + 1)],
+        }
+        ctx["head_extra"] = "\n".join('<script type="application/ld+json">\n' + json.dumps(x, ensure_ascii=False, indent=2) + "\n</script>" for x in (ld, faq))
+    elif page == "about":
+        ctx["page_title"], ctx["page_desc"] = esc["about_title"], esc["about_meta"]
+        ctx["scripts_extra"] = ""
+        people = [
+            {"@type": "Person", "name": "Emily Freeman", "jobTitle": t["role1"], "honorificSuffix": "BCBA",
+             "image": SITE + "/assets/emily-freeman.webp", "url": SITE + url_for(code, "about") + "#emily-freeman",
+             "worksFor": {"@type": "Organization", "name": "Pinnacle EDS", "url": SITE}},
+            {"@type": "Person", "name": "Ahmed Elmi", "jobTitle": t["role2"],
+             "image": SITE + "/assets/ahmed-elmi.webp", "url": SITE + url_for(code, "about") + "#ahmed-elmi",
+             "worksFor": {"@type": "Organization", "name": "Pinnacle EDS", "url": SITE}},
+        ]
+        ld = {"@context": "https://schema.org", "@type": "AboutPage", "inLanguage": code, "url": SITE + url_for(code, "about"),
+              "name": t["about_title"], "description": t["about_meta"],
+              "about": {"@type": "Organization", "name": "Pinnacle EDS", "url": SITE, "foundingDate": "2026", "employee": people}}
         ctx["head_extra"] = '<script type="application/ld+json">\n' + json.dumps(ld, ensure_ascii=False, indent=2) + "\n</script>"
     else:
         ctx["page_title"], ctx["page_desc"] = esc["a11y_title"], esc["a11y_meta"]
@@ -95,7 +117,7 @@ def build_page(lang, page):
         ctx["head_extra"] = ""
     ctx["content"] = render(PAGES[page], ctx)
     out = render(BASE, ctx)
-    dest = ROOT / (prefix(code).strip("/")) / ("" if page == "home" else "accessibility") / "index.html"
+    dest = ROOT / (prefix(code).strip("/")) / SLUGS[page].strip("/") / "index.html"
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(out, encoding="utf-8")
     return dest
@@ -113,7 +135,8 @@ def build_sitemap():
                 rows.append(f'    <xhtml:link rel="alternate" hreflang="{a["code"]}" href="{SITE}{url_for(a["code"], page)}" />')
             rows.append(f'    <xhtml:link rel="alternate" hreflang="x-default" href="{SITE}{url_for("en", page)}" />')
             rows.append(f"    <lastmod>{today}</lastmod>")
-            rows.append(f"    <priority>{'1.0' if page == 'home' and l['code'] == 'en' else '0.7' if page == 'home' else '0.3'}</priority>")
+            pri = {"home": "0.7", "about": "0.6", "accessibility": "0.3"}[page]
+            rows.append(f"    <priority>{'1.0' if page == 'home' and l['code'] == 'en' else pri}</priority>")
             rows.append("  </url>")
     rows.append("</urlset>")
     (ROOT / "sitemap.xml").write_text("\n".join(rows) + "\n", encoding="utf-8")
