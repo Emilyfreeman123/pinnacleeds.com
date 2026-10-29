@@ -94,7 +94,7 @@
   "f_send": "Envoyer le message",
   "f_note": "Nous utilisons vos coordonnées uniquement pour répondre à cette demande.",
   "f_ok": "Merci. Votre message a bien été envoyé et nous vous répondrons très bientôt.",
-  "f_err": "Une erreur s'est produite. Veuillez écrire directement à info@pinnacleeds.com.",
+  "f_err": "Une erreur s'est produite. Veuillez écrire directement à edspinnacle@gmail.com.",
   "footer_tag": "Infrastructure d'éducation spécialisée pour les institutions et les gouvernements.",
   "foot_nav_label": "Pied de page",
   "foot_access": "Accessibilité",
@@ -112,7 +112,7 @@
   "a11y_h2b": "Limites connues",
   "a11y_limits": "Certaines traductions sont des ébauches encore en cours de relecture par des locuteurs natifs.",
   "a11y_h2c": "Commentaires et assistance",
-  "a11y_feedback": "Si vous rencontrez des difficultés avec une partie de ce site, ou si vous avez besoin des informations dans un autre format, écrivez à info@pinnacleeds.com en décrivant la page et le problème. Nous visons à répondre sous cinq jours ouvrables.",
+  "a11y_feedback": "Si vous rencontrez des difficultés avec une partie de ce site, ou si vous avez besoin des informations dans un autre format, écrivez à edspinnacle@gmail.com en décrivant la page et le problème. Nous visons à répondre sous cinq jours ouvrables.",
   "a11y_updated": "Dernière révision : 27 octobre 2026.",
   "back_home": "Retour à l'accueil",
   "motion_pause": "Mettre l'animation en pause",
@@ -167,7 +167,7 @@
   "faq6_q": "Où votre équipe est-elle habilitée à exercer ?",
   "faq6_a": "Nos praticiens détiennent le titre d'analyste du comportement agréé (LBA) au Minnesota, en Virginie, au Kansas, au Maryland et à Hawaï, ainsi qu'une licence d'enseignement en Californie, au Minnesota et à Hawaï.",
   "faq7_q": "Comment commencer ?",
-  "faq7_a": "Envoyez-nous un message ou écrivez à info@pinnacleeds.com : nous vous répondrons pour planifier un premier appel. Pour les ministères, merci d'indiquer votre pays et votre ministère.",
+  "faq7_a": "Envoyez-nous un message ou écrivez à edspinnacle@gmail.com : nous vous répondrons pour planifier un premier appel. Pour les ministères, merci d'indiquer votre pays et votre ministère.",
   "about_title": "À propos | Pinnacle EDS",
   "about_meta": "Qui nous sommes, pourquoi Pinnacle EDS existe et les directeurs généraux qui le dirigent : Emily Freeman, BCBA, et Ahmed Elmi.",
   "ab_eyebrow": "À propos de Pinnacle EDS",
@@ -235,5 +235,9 @@
   "st_md": "Maryland",
   "st_hi": "Hawaï",
   "st_ca": "Californie",
-  "ab_team_note": "Nous déployons des équipes pluridisciplinaires d'analystes du comportement, de spécialistes de l'éducation spécialisée, de responsables éducatifs et de professionnels de la mise en œuvre, à distance et sur place. Lorsqu'une interprétation juridique ou réglementaire locale est nécessaire, nous travaillons avec des conseillers juridiques qualifiés de cette juridiction."
+  "ab_team_note": "Nous déployons des équipes pluridisciplinaires d'analystes du comportement, de spécialistes de l'éducation spécialisée, de responsables éducatifs et de professionnels de la mise en œuvre, à distance et sur place. Lorsqu'une interprétation juridique ou réglementaire locale est nécessaire, nous travaillons avec des conseillers juridiques qualifiés de cette juridiction.",
+  "f_country": "Pays",
+  "f_type": "Type d'organisation",
+  "f_type_ph": "Choisissez une option",
+  "f_type_other": "Autre"
 }

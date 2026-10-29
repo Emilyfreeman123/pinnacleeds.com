@@ -19,6 +19,8 @@ SLUGS = {"home": "", "about": "about/", "accessibility": "accessibility/"}
 PAGES = {name: (SRC / f"{name}.html").read_text(encoding="utf-8") for name in SLUGS}
 FORM_JS = (SRC / "form.js").read_text(encoding="utf-8")
 FAQ_COUNT = 7
+# Web3Forms access key for edspinnacle@gmail.com (public by design; not a secret)
+FORM_KEY = "WEB3FORMS_ACCESS_KEY"
 EN = json.loads((SRC / "i18n" / "en.json").read_text(encoding="utf-8"))
 
 
@@ -76,6 +78,7 @@ def build_page(lang, page):
         "about_href": url_for(code, "about"), "home_cur": ' aria-current="page"' if page == "home" else "",
         "about_cur": ' aria-current="page"' if page == "about" else "",
         "lang_items": "\n".join(items),
+        "form_key": FORM_KEY,
         "f_ok_js": json.dumps(t["f_ok"], ensure_ascii=False),
         "f_err_js": json.dumps(t["f_err"], ensure_ascii=False),
     })
@@ -84,7 +87,7 @@ def build_page(lang, page):
         ctx["scripts_extra"] = render(FORM_JS, ctx)
         ld = {
             "@context": "https://schema.org", "@type": "ProfessionalService", "name": "Pinnacle EDS",
-            "url": SITE, "email": "info@pinnacleeds.com", "foundingDate": "2026", "inLanguage": code,
+            "url": SITE, "email": "edspinnacle@gmail.com", "foundingDate": "2026", "inLanguage": code,
             "description": t["meta_desc"],
             "areaServed": ["United States", "Qatar", "United Arab Emirates", "Saudi Arabia", "MENA Region"],
             "knowsAbout": ["Applied Behavior Analysis", "Special Education", "Government Education Reform",
@@ -143,6 +146,8 @@ def build_sitemap():
 
 
 if __name__ == "__main__":
+    if FORM_KEY == "WEB3FORMS_ACCESS_KEY":
+        print("WARNING: FORM_KEY is not set - the contact form will not deliver until it is.")
     built = [build_page(l, p) for l in LANGS if (SRC / "i18n" / f"{l['code']}.json").exists() for p in PAGES]
     build_sitemap()
     (ROOT / "site.js").write_text((SRC / "site.js").read_text(encoding="utf-8"), encoding="utf-8")

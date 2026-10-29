@@ -38,7 +38,7 @@
   "@type": "ProfessionalService",
   "name": "Pinnacle EDS",
   "url": "https://pinnacleeds.com",
-  "email": "info@pinnacleeds.com",
+  "email": "edspinnacle@gmail.com",
   "foundingDate": "2026",
   "inLanguage": "ar",
   "description": "تصمّم Pinnacle EDS وتنفّذ الأنظمة السريرية والتعليمية والسياساتية التي تعتمد عليها المنظومات الصحية والمناطق التعليمية والحكومات لتقديم خدمات التربية الخاصة وتحليل السلوك التطبيقي (ABA) بصورة متسقة.",
@@ -117,7 +117,7 @@
       "name": "كيف نبدأ؟",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "أرسلوا إلينا رسالة أو راسلونا على info@pinnacleeds.com، وسنردّ عليكم لتحديد موعد لمكالمة تعريفية. نرجو من الوزارات ذكر الدولة واسم الوزارة."
+        "text": "أرسلوا إلينا رسالة أو راسلونا على edspinnacle@gmail.com، وسنردّ عليكم لتحديد موعد لمكالمة تعريفية. نرجو من الوزارات ذكر الدولة واسم الوزارة."
       }
     }
   ]
@@ -342,7 +342,7 @@
         <details class="faq-item"><summary><h3>هل تعملون خارج الولايات المتحدة؟</h3></summary><p>نعم. نعمل عن بُعد وميدانيًا، بما في ذلك مع حكومات في منطقة الخليج والشرق الأوسط وشمال أفريقيا عمومًا. وعندما يلزم تفسير قانوني أو تنظيمي محلي، ننسّق مع مستشارين قانونيين مؤهلين في تلك الولاية القضائية.</p></details>
         <details class="faq-item"><summary><h3>هل تقدّمون العلاج أو الخدمات للأطفال مباشرة؟</h3></summary><p>لا. نقدّم الاستشارات وتصميم الأنظمة للمؤسسات. أما التوصيات السريرية والتعليمية فينفّذها المختصون المرخّصون لديكم.</p></details>
         <details class="faq-item"><summary><h3>أين يحمل فريقكم تراخيصه؟</h3></summary><p>يحمل ممارسونا ترخيص محلّل سلوك مرخّص في ولايات مينيسوتا وفرجينيا وكانساس وماريلاند وهاواي، وترخيص التدريس في كاليفورنيا ومينيسوتا وهاواي.</p></details>
-        <details class="faq-item"><summary><h3>كيف نبدأ؟</h3></summary><p>أرسلوا إلينا رسالة أو راسلونا على info@pinnacleeds.com، وسنردّ عليكم لتحديد موعد لمكالمة تعريفية. نرجو من الوزارات ذكر الدولة واسم الوزارة.</p></details>
+        <details class="faq-item"><summary><h3>كيف نبدأ؟</h3></summary><p>أرسلوا إلينا رسالة أو راسلونا على edspinnacle@gmail.com، وسنردّ عليكم لتحديد موعد لمكالمة تعريفية. نرجو من الوزارات ذكر الدولة واسم الوزارة.</p></details>
       </div>
     </div>
   </section>
@@ -356,21 +356,36 @@
         <h2 id="contact-title">ابدأ بمحادثة تعريفية.</h2>
         <p class="lede">أخبرونا عن مؤسستكم وما تسعون إلى بنائه أو إصلاحه، وسنردّ عليكم لتحديد موعد مكالمة.</p>
         <dl class="contact-meta">
-          <div><dt>البريد الإلكتروني</dt><dd><a href="mailto:info@pinnacleeds.com">info@pinnacleeds.com</a></dd></div>
+          <div><dt>البريد الإلكتروني</dt><dd><a href="mailto:edspinnacle@gmail.com">edspinnacle@gmail.com</a></dd></div>
           <div><dt>نطاق العمل</dt><dd>عن بُعد وفي الموقع، داخل الولايات المتحدة وخارجها</dd></div>
           <div><dt>الوزارات</dt><dd>يُرجى ذكر دولتكم ووزارتكم في رسالتكم.</dd></div>
         </dl>
       </div>
-      <form id="contact-form" action="https://formspree.io/f/mkoaapne" method="POST" aria-labelledby="contact-title">
-        <input type="hidden" name="_subject" value="New inquiry — Pinnacle EDS (ar)" />
-        <input type="hidden" name="language" value="ar" />
-        <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" aria-labelledby="contact-title" data-lang-name="العربية">
+        <input type="hidden" name="access_key" value="WEB3FORMS_ACCESS_KEY" />
+        <input type="hidden" name="subject" value="New inquiry from the Pinnacle EDS website" />
+        <input type="hidden" name="from_name" value="Pinnacle EDS website" />
+        <input type="hidden" name="redirect" value="https://pinnacleeds.com/ar/#contact" />
+        <input type="hidden" name="Language" value="العربية" />
+        <input class="hp" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <div class="row">
-          <label>الاسم<input type="text" name="name" autocomplete="name" required /></label>
+          <label>الاسم<input type="text" name="Name" autocomplete="name" required /></label>
           <label>البريد الإلكتروني<input type="email" name="email" autocomplete="email" dir="ltr" required /></label>
         </div>
-        <label>المؤسسة <span class="req">(اختياري)</span><input type="text" name="organization" autocomplete="organization" /></label>
-        <label>كيف يمكننا مساعدتكم؟<textarea name="message" required></textarea></label>
+        <div class="row">
+          <label><span>المؤسسة <span class="req">(اختياري)</span></span><input type="text" name="Organization" autocomplete="organization" /></label>
+          <label><span>الدولة <span class="req">(اختياري)</span></span><input type="text" name="Country" autocomplete="country-name" /></label>
+        </div>
+        <label>نوع الجهة
+          <select name="Organization type" required>
+            <option value="" disabled selected>اختر خيارًا</option>
+            <option value="Health system or multi-site provider">المنظومات الصحية ومقدّمو الخدمات متعدّدو المواقع</option>
+            <option value="State agency or school district">الجهات الحكومية على مستوى الولايات والمناطق التعليمية</option>
+            <option value="Government or ministry of education">الحكومات ووزارات التعليم</option>
+            <option value="Other">أخرى</option>
+          </select>
+        </label>
+        <label>كيف يمكننا مساعدتكم؟<textarea name="Message" required></textarea></label>
         <div class="form-foot">
           <button class="btn" type="submit">إرسال الرسالة</button>
           <small>نستخدم بياناتكم للرد على هذا الاستفسار فقط.</small>
@@ -396,7 +411,7 @@
         <a href="/ar/about/#leadership">القيادة</a>
         <a href="/ar/#faq">الأسئلة الشائعة</a>
         <a href="/ar/accessibility/">إمكانية الوصول</a>
-        <a href="mailto:info@pinnacleeds.com">info@pinnacleeds.com</a>
+        <a href="mailto:edspinnacle@gmail.com">edspinnacle@gmail.com</a>
       </nav>
     </div>
     <p class="disclaimer">© 2026 Pinnacle EDS. تقدّم Pinnacle EDS خدمات استشارية وتصميم أنظمة فقط. لا تُعدّ خدماتنا رعاية طبية فردية ولا علاجًا نفسيًا ولا مشورة قانونية ولا ضمانًا للحصول على اعتماد مهني. التوصيات السريرية والتعليمية مخصّصة للاستخدام المؤسسي والبرامجي، ويجب تنفيذها تحت إشراف مهنيين مرخّصين.</p>
@@ -425,18 +440,39 @@
   if (form && window.fetch) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      if (form.elements.botcheck.checked) return; /* bot ticked the hidden box */
       var send = form.querySelector('button[type="submit"]');
+      var v = function (n) { return (form.elements[n].value || '').trim(); };
+      var org = v('Organization'), type = v('Organization type');
+      /* Fixed field order = the order of rows in the email */
+      var data = {
+        access_key: v('access_key'),
+        subject: 'New inquiry: ' + v('Name') + (org ? ' (' + org + ')' : '') + ' | ' + type,
+        from_name: 'Pinnacle EDS website',
+        Name: v('Name'),
+        email: v('email'),
+        Organization: org || '-',
+        'Organization type': type,
+        Country: v('Country') || '-',
+        Message: v('Message'),
+        Language: form.getAttribute('data-lang-name'),
+        Page: location.href.split('#')[0]
+      };
       send.disabled = true;
       status.className = 'status';
-      fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
-        .then(function (r) {
-          if (!r.ok) throw new Error();
+      fetch(form.action, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(data)
+      })
+        .then(function (r) { return r.json().then(function (j) { if (!r.ok || !j.success) throw new Error(j.message); }); })
+        .then(function () {
           form.reset();
           status.textContent = "شكرًا لكم. تم إرسال رسالتكم وسنتواصل معكم قريبًا.";
           status.className = 'status show';
         })
         .catch(function () {
-          status.textContent = "حدث خطأ ما. يُرجى مراسلتنا مباشرة على info@pinnacleeds.com.";
+          status.textContent = "حدث خطأ ما. يُرجى مراسلتنا مباشرة على edspinnacle@gmail.com.";
           status.className = 'status show err';
         })
         .then(function () { send.disabled = false; });

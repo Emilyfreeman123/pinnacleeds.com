@@ -94,7 +94,7 @@
   "f_send": "Enviar mensagem",
   "f_note": "Usamos seus dados apenas para responder a esta solicitação.",
   "f_ok": "Obrigado. Sua mensagem foi enviada e entraremos em contato em breve.",
-  "f_err": "Algo deu errado. Escreva diretamente para info@pinnacleeds.com.",
+  "f_err": "Algo deu errado. Escreva diretamente para edspinnacle@gmail.com.",
   "footer_tag": "Infraestrutura de educação especial para instituições e governos.",
   "foot_nav_label": "Rodapé",
   "foot_access": "Acessibilidade",
@@ -112,7 +112,7 @@
   "a11y_h2b": "Limitações conhecidas",
   "a11y_limits": "Algumas traduções são rascunhos que ainda estão sendo revisados por falantes nativos.",
   "a11y_h2c": "Comentários e ajuda",
-  "a11y_feedback": "Se você tiver dificuldade para usar qualquer parte deste site ou precisar da informação em outro formato, escreva para info@pinnacleeds.com descrevendo a página e o problema. Buscamos responder em até cinco dias úteis.",
+  "a11y_feedback": "Se você tiver dificuldade para usar qualquer parte deste site ou precisar da informação em outro formato, escreva para edspinnacle@gmail.com descrevendo a página e o problema. Buscamos responder em até cinco dias úteis.",
   "a11y_updated": "Última revisão: 27 de outubro de 2026.",
   "back_home": "Voltar ao início",
   "motion_pause": "Pausar animação",
@@ -167,7 +167,7 @@
   "faq6_q": "Onde sua equipe é licenciada?",
   "faq6_a": "Nossos profissionais têm credencial de Analista do Comportamento Licenciado em Minnesota, Virgínia, Kansas, Maryland e Havaí, e licença para lecionar na Califórnia, em Minnesota e no Havaí.",
   "faq7_q": "Como começamos?",
-  "faq7_a": "Envie uma mensagem ou escreva para info@pinnacleeds.com e responderemos para agendar uma conversa inicial. Ministérios, por favor informem o país e o ministério.",
+  "faq7_a": "Envie uma mensagem ou escreva para edspinnacle@gmail.com e responderemos para agendar uma conversa inicial. Ministérios, por favor informem o país e o ministério.",
   "about_title": "Sobre nós | Pinnacle EDS",
   "about_meta": "Quem somos, por que a Pinnacle EDS existe e os diretores-gerais que a lideram: Emily Freeman, BCBA, e Ahmed Elmi.",
   "ab_eyebrow": "Sobre a Pinnacle EDS",
@@ -235,5 +235,9 @@
   "st_md": "Maryland",
   "st_hi": "Havaí",
   "st_ca": "Califórnia",
-  "ab_team_note": "Mobilizamos equipes multidisciplinares de analistas do comportamento, especialistas em educação especial, lideranças educacionais e profissionais de implementação, de forma remota e presencial. Quando é preciso interpretar leis ou normas locais, trabalhamos em conjunto com assessoria jurídica qualificada daquela jurisdição."
+  "ab_team_note": "Mobilizamos equipes multidisciplinares de analistas do comportamento, especialistas em educação especial, lideranças educacionais e profissionais de implementação, de forma remota e presencial. Quando é preciso interpretar leis ou normas locais, trabalhamos em conjunto com assessoria jurídica qualificada daquela jurisdição.",
+  "f_country": "País",
+  "f_type": "Tipo de organização",
+  "f_type_ph": "Selecione uma opção",
+  "f_type_other": "Outro"
 }

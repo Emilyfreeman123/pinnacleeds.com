@@ -94,7 +94,7 @@
   "f_send": "Send message",
   "f_note": "We use your details only to respond to this inquiry.",
   "f_ok": "Thank you. Your message has been sent and we will be in touch shortly.",
-  "f_err": "Something went wrong. Please email info@pinnacleeds.com directly.",
+  "f_err": "Something went wrong. Please email edspinnacle@gmail.com directly.",
   "footer_tag": "Special education infrastructure for institutions and governments.",
   "foot_nav_label": "Footer",
   "foot_access": "Accessibility",
@@ -112,7 +112,7 @@
   "a11y_h2b": "Known limitations",
   "a11y_limits": "Some translations are drafts that are still being reviewed by native speakers.",
   "a11y_h2c": "Feedback and assistance",
-  "a11y_feedback": "If you have trouble using any part of this site, or need information in another format, email info@pinnacleeds.com. Please describe the page and the problem. We aim to respond within five business days.",
+  "a11y_feedback": "If you have trouble using any part of this site, or need information in another format, email edspinnacle@gmail.com. Please describe the page and the problem. We aim to respond within five business days.",
   "a11y_updated": "Last reviewed: October 27, 2026.",
   "back_home": "Back to home",
   "motion_pause": "Pause animation",
@@ -167,7 +167,7 @@
   "faq6_q": "Where is your team licensed?",
   "faq6_a": "Our practitioners hold Licensed Behavior Analyst credentials in Minnesota, Virginia, Kansas, Maryland, and Hawaii, and teaching licensure in California, Minnesota, and Hawaii.",
   "faq7_q": "How do we get started?",
-  "faq7_a": "Send us a message or email info@pinnacleeds.com, and we will reply to schedule a discovery call. Ministries, please include your country and ministry.",
+  "faq7_a": "Send us a message or email edspinnacle@gmail.com, and we will reply to schedule a discovery call. Ministries, please include your country and ministry.",
   "about_title": "About | Pinnacle EDS",
   "about_meta": "Who we are, why Pinnacle EDS exists, and the managing directors who lead it: Emily Freeman, BCBA, and Ahmed Elmi.",
   "ab_eyebrow": "About Pinnacle EDS",
@@ -235,5 +235,9 @@
   "st_md": "Maryland",
   "st_hi": "Hawaii",
   "st_ca": "California",
-  "ab_team_note": "We deploy multidisciplinary teams of behavior analysts, special education specialists, education leaders, and implementation professionals, virtually and on site. When local legal or regulatory interpretation is needed, we coordinate with qualified counsel in that jurisdiction."
+  "ab_team_note": "We deploy multidisciplinary teams of behavior analysts, special education specialists, education leaders, and implementation professionals, virtually and on site. When local legal or regulatory interpretation is needed, we coordinate with qualified counsel in that jurisdiction.",
+  "f_country": "Country",
+  "f_type": "Organization type",
+  "f_type_ph": "Select one",
+  "f_type_other": "Other"
 }

@@ -38,7 +38,7 @@
   "@type": "ProfessionalService",
   "name": "Pinnacle EDS",
   "url": "https://pinnacleeds.com",
-  "email": "info@pinnacleeds.com",
+  "email": "edspinnacle@gmail.com",
   "foundingDate": "2026",
   "inLanguage": "es",
   "description": "Pinnacle EDS diseña e implementa los sistemas clínicos, educativos y de políticas que los sistemas de salud, los distritos escolares y los gobiernos utilizan para ofrecer servicios de educación especial y ABA de forma coherente.",
@@ -117,7 +117,7 @@
       "name": "¿Cómo empezamos?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Envíenos un mensaje o escriba a info@pinnacleeds.com y le responderemos para programar una llamada inicial. Si escribe en nombre de un ministerio, indique su país y ministerio."
+        "text": "Envíenos un mensaje o escriba a edspinnacle@gmail.com y le responderemos para programar una llamada inicial. Si escribe en nombre de un ministerio, indique su país y ministerio."
       }
     }
   ]
@@ -342,7 +342,7 @@
         <details class="faq-item"><summary><h3>¿Trabajan fuera de Estados Unidos?</h3></summary><p>Sí. Trabajamos de forma virtual y presencial, también con gobiernos de la región del Golfo y del resto de Oriente Medio y el Norte de África. Cuando se requiere una interpretación jurídica o normativa local, coordinamos con asesores legales cualificados de esa jurisdicción.</p></details>
         <details class="faq-item"><summary><h3>¿Prestan terapia o servicios directamente a los niños?</h3></summary><p>No. Ofrecemos consultoría y diseño de sistemas para organizaciones. Las recomendaciones clínicas y educativas las aplican sus propios profesionales debidamente acreditados.</p></details>
         <details class="faq-item"><summary><h3>¿Dónde tiene licencia su equipo?</h3></summary><p>Nuestros profesionales cuentan con la acreditación de Analista de Conducta con Licencia en Minnesota, Virginia, Kansas, Maryland y Hawái, y licencia docente en California, Minnesota y Hawái.</p></details>
-        <details class="faq-item"><summary><h3>¿Cómo empezamos?</h3></summary><p>Envíenos un mensaje o escriba a info@pinnacleeds.com y le responderemos para programar una llamada inicial. Si escribe en nombre de un ministerio, indique su país y ministerio.</p></details>
+        <details class="faq-item"><summary><h3>¿Cómo empezamos?</h3></summary><p>Envíenos un mensaje o escriba a edspinnacle@gmail.com y le responderemos para programar una llamada inicial. Si escribe en nombre de un ministerio, indique su país y ministerio.</p></details>
       </div>
     </div>
   </section>
@@ -356,21 +356,36 @@
         <h2 id="contact-title">Comience con una conversación exploratoria.</h2>
         <p class="lede">Cuéntenos sobre su organización y lo que desea construir o reformar. Le responderemos para programar una llamada.</p>
         <dl class="contact-meta">
-          <div><dt>Correo electrónico</dt><dd><a href="mailto:info@pinnacleeds.com">info@pinnacleeds.com</a></dd></div>
+          <div><dt>Correo electrónico</dt><dd><a href="mailto:edspinnacle@gmail.com">edspinnacle@gmail.com</a></dd></div>
           <div><dt>Ámbito de trabajo</dt><dd>A distancia y presencial, en Estados Unidos y a nivel internacional</dd></div>
           <div><dt>Ministerios</dt><dd>Indique su país y su ministerio en el mensaje.</dd></div>
         </dl>
       </div>
-      <form id="contact-form" action="https://formspree.io/f/mkoaapne" method="POST" aria-labelledby="contact-title">
-        <input type="hidden" name="_subject" value="New inquiry — Pinnacle EDS (es)" />
-        <input type="hidden" name="language" value="es" />
-        <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" aria-labelledby="contact-title" data-lang-name="Español">
+        <input type="hidden" name="access_key" value="WEB3FORMS_ACCESS_KEY" />
+        <input type="hidden" name="subject" value="New inquiry from the Pinnacle EDS website" />
+        <input type="hidden" name="from_name" value="Pinnacle EDS website" />
+        <input type="hidden" name="redirect" value="https://pinnacleeds.com/es/#contact" />
+        <input type="hidden" name="Language" value="Español" />
+        <input class="hp" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <div class="row">
-          <label>Nombre<input type="text" name="name" autocomplete="name" required /></label>
+          <label>Nombre<input type="text" name="Name" autocomplete="name" required /></label>
           <label>Correo electrónico<input type="email" name="email" autocomplete="email" dir="ltr" required /></label>
         </div>
-        <label>Organización <span class="req">(opcional)</span><input type="text" name="organization" autocomplete="organization" /></label>
-        <label>¿Cómo podemos ayudarle?<textarea name="message" required></textarea></label>
+        <div class="row">
+          <label><span>Organización <span class="req">(opcional)</span></span><input type="text" name="Organization" autocomplete="organization" /></label>
+          <label><span>País <span class="req">(opcional)</span></span><input type="text" name="Country" autocomplete="country-name" /></label>
+        </div>
+        <label>Tipo de organización
+          <select name="Organization type" required>
+            <option value="" disabled selected>Seleccione una opción</option>
+            <option value="Health system or multi-site provider">Sistemas de salud y proveedores con varias sedes</option>
+            <option value="State agency or school district">Agencias estatales y distritos escolares</option>
+            <option value="Government or ministry of education">Gobiernos y ministerios de educación</option>
+            <option value="Other">Otro</option>
+          </select>
+        </label>
+        <label>¿Cómo podemos ayudarle?<textarea name="Message" required></textarea></label>
         <div class="form-foot">
           <button class="btn" type="submit">Enviar mensaje</button>
           <small>Usamos sus datos únicamente para responder a esta consulta.</small>
@@ -396,7 +411,7 @@
         <a href="/es/about/#leadership">Liderazgo</a>
         <a href="/es/#faq">Preguntas frecuentes</a>
         <a href="/es/accessibility/">Accesibilidad</a>
-        <a href="mailto:info@pinnacleeds.com">info@pinnacleeds.com</a>
+        <a href="mailto:edspinnacle@gmail.com">edspinnacle@gmail.com</a>
       </nav>
     </div>
     <p class="disclaimer">© 2026 Pinnacle EDS. Pinnacle EDS presta únicamente servicios de consultoría y diseño de sistemas. Nuestros servicios no constituyen atención médica individualizada, tratamiento psicológico, asesoría legal ni garantía de certificación. Todas las recomendaciones clínicas y educativas están destinadas al uso organizacional y programático, y deben implementarse bajo la supervisión de profesionales debidamente autorizados.</p>
@@ -425,18 +440,39 @@
   if (form && window.fetch) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      if (form.elements.botcheck.checked) return; /* bot ticked the hidden box */
       var send = form.querySelector('button[type="submit"]');
+      var v = function (n) { return (form.elements[n].value || '').trim(); };
+      var org = v('Organization'), type = v('Organization type');
+      /* Fixed field order = the order of rows in the email */
+      var data = {
+        access_key: v('access_key'),
+        subject: 'New inquiry: ' + v('Name') + (org ? ' (' + org + ')' : '') + ' | ' + type,
+        from_name: 'Pinnacle EDS website',
+        Name: v('Name'),
+        email: v('email'),
+        Organization: org || '-',
+        'Organization type': type,
+        Country: v('Country') || '-',
+        Message: v('Message'),
+        Language: form.getAttribute('data-lang-name'),
+        Page: location.href.split('#')[0]
+      };
       send.disabled = true;
       status.className = 'status';
-      fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
-        .then(function (r) {
-          if (!r.ok) throw new Error();
+      fetch(form.action, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(data)
+      })
+        .then(function (r) { return r.json().then(function (j) { if (!r.ok || !j.success) throw new Error(j.message); }); })
+        .then(function () {
           form.reset();
           status.textContent = "Gracias. Su mensaje ha sido enviado y nos pondremos en contacto pronto.";
           status.className = 'status show';
         })
         .catch(function () {
-          status.textContent = "Algo salió mal. Escriba directamente a info@pinnacleeds.com.";
+          status.textContent = "Algo salió mal. Escriba directamente a edspinnacle@gmail.com.";
           status.className = 'status show err';
         })
         .then(function () { send.disabled = false; });

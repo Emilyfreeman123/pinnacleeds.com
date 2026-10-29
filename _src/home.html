@@ -189,21 +189,36 @@
         <h2 id="contact-title">{{contact_h2}}</h2>
         <p class="lede">{{contact_lede}}</p>
         <dl class="contact-meta">
-          <div><dt>{{meta_email}}</dt><dd><a href="mailto:info@pinnacleeds.com">info@pinnacleeds.com</a></dd></div>
+          <div><dt>{{meta_email}}</dt><dd><a href="mailto:edspinnacle@gmail.com">edspinnacle@gmail.com</a></dd></div>
           <div><dt>{{meta_eng}}</dt><dd>{{meta_eng_v}}</dd></div>
           <div><dt>{{meta_min}}</dt><dd>{{meta_min_v}}</dd></div>
         </dl>
       </div>
-      <form id="contact-form" action="https://formspree.io/f/mkoaapne" method="POST" aria-labelledby="contact-title">
-        <input type="hidden" name="_subject" value="New inquiry — Pinnacle EDS ({{lang}})" />
-        <input type="hidden" name="language" value="{{lang}}" />
-        <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" aria-labelledby="contact-title" data-lang-name="{{lang_name}}">
+        <input type="hidden" name="access_key" value="{{form_key}}" />
+        <input type="hidden" name="subject" value="New inquiry from the Pinnacle EDS website" />
+        <input type="hidden" name="from_name" value="Pinnacle EDS website" />
+        <input type="hidden" name="redirect" value="{{canonical}}#contact" />
+        <input type="hidden" name="Language" value="{{lang_name}}" />
+        <input class="hp" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <div class="row">
-          <label>{{f_name}}<input type="text" name="name" autocomplete="name" required /></label>
+          <label>{{f_name}}<input type="text" name="Name" autocomplete="name" required /></label>
           <label>{{f_email}}<input type="email" name="email" autocomplete="email" dir="ltr" required /></label>
         </div>
-        <label>{{f_org}} <span class="req">{{f_optional}}</span><input type="text" name="organization" autocomplete="organization" /></label>
-        <label>{{f_msg}}<textarea name="message" required></textarea></label>
+        <div class="row">
+          <label><span>{{f_org}} <span class="req">{{f_optional}}</span></span><input type="text" name="Organization" autocomplete="organization" /></label>
+          <label><span>{{f_country}} <span class="req">{{f_optional}}</span></span><input type="text" name="Country" autocomplete="country-name" /></label>
+        </div>
+        <label>{{f_type}}
+          <select name="Organization type" required>
+            <option value="" disabled selected>{{f_type_ph}}</option>
+            <option value="Health system or multi-site provider">{{t1_h}}</option>
+            <option value="State agency or school district">{{t2_h}}</option>
+            <option value="Government or ministry of education">{{t3_h}}</option>
+            <option value="Other">{{f_type_other}}</option>
+          </select>
+        </label>
+        <label>{{f_msg}}<textarea name="Message" required></textarea></label>
         <div class="form-foot">
           <button class="btn" type="submit">{{f_send}}</button>
           <small>{{f_note}}</small>
