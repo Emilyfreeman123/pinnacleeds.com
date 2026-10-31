@@ -15,8 +15,11 @@ SITE = "https://pinnacleeds.com"
 LANGS = json.loads((SRC / "languages.json").read_text(encoding="utf-8"))
 BASE = (SRC / "base.html").read_text(encoding="utf-8")
 # page name -> URL slug under each language prefix
-SLUGS = {"home": "", "about": "about/", "accessibility": "accessibility/"}
+SLUGS = {"home": "", "serve": "serve/", "approach": "approach/", "frameworks": "frameworks/", "about": "about/", "accessibility": "accessibility/"}
+# pages that only need a title + description (keys in the i18n files)
+SIMPLE = {"serve": ("serve_title", "serve_meta"), "approach": ("appr_title", "appr_meta"), "frameworks": ("fw_title", "fw_meta")}
 PAGES = {name: (SRC / f"{name}.html").read_text(encoding="utf-8") for name in SLUGS}
+CTA = (SRC / "cta.html").read_text(encoding="utf-8")
 FORM_JS = (SRC / "form.js").read_text(encoding="utf-8")
 FAQ_COUNT = 7
 EN = json.loads((SRC / "i18n" / "en.json").read_text(encoding="utf-8"))
@@ -75,6 +78,10 @@ def build_page(lang, page):
         "font_url": html.escape(font_url), "home": prefix(code), "a11y_href": url_for(code, "accessibility"),
         "about_href": url_for(code, "about"), "home_cur": ' aria-current="page"' if page == "home" else "",
         "about_cur": ' aria-current="page"' if page == "about" else "",
+        "serve_href": url_for(code, "serve"), "approach_href": url_for(code, "approach"), "fw_href": url_for(code, "frameworks"),
+        "serve_cur": ' aria-current="page"' if page == "serve" else "",
+        "approach_cur": ' aria-current="page"' if page == "approach" else "",
+        "frameworks_cur": ' aria-current="page"' if page == "frameworks" else "",
         "lang_items": "\n".join(items),
         "f_ok_js": json.dumps(t["f_ok"], ensure_ascii=False),
         "f_err_js": json.dumps(t["f_err"], ensure_ascii=False),
@@ -111,10 +118,15 @@ def build_page(lang, page):
               "name": t["about_title"], "description": t["about_meta"],
               "about": {"@type": "Organization", "name": "Pinnacle EDS", "url": SITE, "foundingDate": "2026", "employee": people}}
         ctx["head_extra"] = '<script type="application/ld+json">\n' + json.dumps(ld, ensure_ascii=False, indent=2) + "\n</script>"
+    elif page in SIMPLE:
+        ctx["page_title"], ctx["page_desc"] = esc[SIMPLE[page][0]], esc[SIMPLE[page][1]]
+        ctx["scripts_extra"] = ""
+        ctx["head_extra"] = ""
     else:
         ctx["page_title"], ctx["page_desc"] = esc["a11y_title"], esc["a11y_meta"]
         ctx["scripts_extra"] = ""
         ctx["head_extra"] = ""
+    ctx["cta_band"] = render(CTA, ctx)
     ctx["content"] = render(PAGES[page], ctx)
     out = render(BASE, ctx)
     dest = ROOT / (prefix(code).strip("/")) / SLUGS[page].strip("/") / "index.html"
@@ -135,7 +147,7 @@ def build_sitemap():
                 rows.append(f'    <xhtml:link rel="alternate" hreflang="{a["code"]}" href="{SITE}{url_for(a["code"], page)}" />')
             rows.append(f'    <xhtml:link rel="alternate" hreflang="x-default" href="{SITE}{url_for("en", page)}" />')
             rows.append(f"    <lastmod>{today}</lastmod>")
-            pri = {"home": "0.7", "about": "0.6", "accessibility": "0.3"}[page]
+            pri = {"home": "0.7", "serve": "0.8", "approach": "0.8", "frameworks": "0.8", "about": "0.6", "accessibility": "0.3"}[page]
             rows.append(f"    <priority>{'1.0' if page == 'home' and l['code'] == 'en' else pri}</priority>")
             rows.append("  </url>")
     rows.append("</urlset>")
