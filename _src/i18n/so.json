@@ -235,5 +235,16 @@
   "st_md": "Maryland",
   "st_hi": "Hawaii",
   "st_ca": "California",
-  "ab_team_note": "Waxaan dirnaa kooxo xirfado kala duwan leh oo ka kooban falanqeeyeyaal habdhaqan, khubaro waxbarasho gaar ah, hoggaamiyeyaal waxbarasho iyo xirfadlayaal hirgelin, fog iyo goob joog ahaanba. Marka loo baahdo fasiraad sharci ama xeer maxalli ah, waxaan la shaqaynaa la-taliyeyaal sharci oo u qalma maamulkaas."
+  "ab_team_note": "Waxaan dirnaa kooxo xirfado kala duwan leh oo ka kooban falanqeeyeyaal habdhaqan, khubaro waxbarasho gaar ah, hoggaamiyeyaal waxbarasho iyo xirfadlayaal hirgelin, fog iyo goob joog ahaanba. Marka loo baahdo fasiraad sharci ama xeer maxalli ah, waxaan la shaqaynaa la-taliyeyaal sharci oo u qalma maamulkaas.",
+  "serve_title": "Yaa aan u adeegnaa | Pinnacle EDS",
+  "serve_meta": "Pinnacle EDS waxay dhisaa nidaamyada waxbarasho gaar ah iyo ABA ee nidaamyada caafimaadka iyo bixiyeyaasha goobo badan, hay'adaha gobolada iyo degmooyinka dugsiyada, iyo dowladaha iyo wasaaradaha waxbarashada.",
+  "appr_title": "Habkeena | Pinnacle EDS",
+  "appr_meta": "Sida mashruucu ula shaqeeyo Pinnacle EDS: shan marxaladood, tan iyo qiimeynta ilaa madax-bannaanida, oo ay hagto Habka Hirgelinta Hay'adeed ee annaga.",
+  "fw_title": "Qaab-dhismeedyada | Pinnacle EDS",
+  "fw_meta": "Qaab-dhismeedyada magacaaban ee Pinnacle EDS hirgeliso: caafimaad iyo u hoggaansanaan, waxbarasho iyo shaqaale, iyo diyaar-garowga dowladda.",
+  "more_serve": "Eeg yaa aan u adeegnaa",
+  "more_approach": "Eeg sida mashruucu u shaqeeyo",
+  "more_fw": "Eeg dhammaan qaab-dhismeedyada",
+  "for_aud": "Qaab-dhismeedyada kooxdan",
+  "ph_h2": "Shanta marxaladood"
 }

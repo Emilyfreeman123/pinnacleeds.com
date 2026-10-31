@@ -5,21 +5,21 @@
       <span class="orb orb-b" data-speed="-0.1"></span>
       <canvas class="net" data-speed="0.1"></canvas>
     </div>
-    <div class="wrap hero-grid">
-      <div>
+    <div class="wrap">
+      <div class="hero-copy">
         <p class="eyebrow">{{hero_eyebrow}}</p>
         <h1>{{hero_h1}} <span class="kicker">{{hero_kicker}}</span></h1>
         <p class="lede">{{hero_lede}}</p>
         <div class="hero-actions">
           <a class="btn" href="#contact">{{hero_btn1}}</a>
-          <a class="btn btn-ghost" href="#frameworks">{{hero_btn2}}</a>
+          <a class="link-arrow" href="{{fw_href}}">{{hero_btn2}}</a>
         </div>
       </div>
-      <dl class="facts" aria-label="{{facts_label}}">
-        <div class="fact"><dt>{{fact1_l}}</dt><dd><bdi>{{fact1_v}}</bdi></dd></div>
-        <div class="fact"><dt>{{fact2_l}}</dt><dd><bdi>{{fact2_v}}</bdi></dd></div>
-        <div class="fact"><dt>{{fact3_l}}</dt><dd><bdi>{{fact3_v}}</bdi></dd></div>
-        <div class="fact"><dt>{{fact4_l}}</dt><dd><bdi>{{fact4_v}}</bdi></dd></div>
+      <dl class="statband" aria-label="{{facts_label}}">
+        <div class="stat"><dt>{{fact1_l}}</dt><dd><bdi>{{fact1_v}}</bdi></dd></div>
+        <div class="stat"><dt>{{fact2_l}}</dt><dd><bdi>{{fact2_v}}</bdi></dd></div>
+        <div class="stat"><dt>{{fact3_l}}</dt><dd><bdi>{{fact3_v}}</bdi></dd></div>
+        <div class="stat"><dt>{{fact4_l}}</dt><dd><bdi>{{fact4_v}}</bdi></dd></div>
       </dl>
     </div>
     <button class="motion-btn" type="button" hidden data-pause="{{motion_pause}}" data-play="{{motion_play}}"><span class="ico" aria-hidden="true"></span><span class="lbl">{{motion_pause}}</span></button>
@@ -33,29 +33,12 @@
         <h2 id="serve-title">{{serve_h2}}</h2>
         <p class="lede">{{serve_lede}}</p>
       </div>
-      <div class="tracks">
-        <article class="track"><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="9" r="3.5"/><circle cx="8" cy="23" r="3.5"/><circle cx="24" cy="23" r="3.5"/><path d="M14 12l-4 8M18 12l4 8M12 23h8"/></svg></span><h3>{{t1_h}}</h3><p>{{t1_p}}</p></article>
-        <article class="track"><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13 16 6l12 7M7 13v11M13 13v11M19 13v11M25 13v11M4 26h24"/></svg></span><h3>{{t2_h}}</h3><p>{{t2_p}}</p></article>
-        <article class="track"><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="11"/><path d="M5 16h22M16 5c-4 4-4 18 0 22M16 5c4 4 4 18 0 22"/></svg></span><h3>{{t3_h}}</h3><p>{{t3_p}}</p></article>
-      </div>
-    </div>
-  </section>
-
-  <!-- 3. What to expect -->
-  <section id="expect" class="sheet sheet-mist" aria-labelledby="expect-title">
-    <div class="wrap promise-grid">
-      <div class="section-head promise-head">
-        <p class="eyebrow">{{pr_eyebrow}}</p>
-        <h2 id="expect-title">{{pr_h2}}</h2>
-        <p class="lede">{{pr_lede}}</p>
-      </div>
-      <ol class="promises">
-        <li class="promise"><span class="num" aria-hidden="true">01</span><div><h3>{{pr1_h}}</h3><p>{{pr1_p}}</p></div></li>
-        <li class="promise"><span class="num" aria-hidden="true">02</span><div><h3>{{pr2_h}}</h3><p>{{pr2_p}}</p></div></li>
-        <li class="promise"><span class="num" aria-hidden="true">03</span><div><h3>{{pr3_h}}</h3><p>{{pr3_p}}</p></div></li>
-        <li class="promise"><span class="num" aria-hidden="true">04</span><div><h3>{{pr4_h}}</h3><p>{{pr4_p}}</p></div></li>
-        <li class="promise"><span class="num" aria-hidden="true">05</span><div><h3>{{pr5_h}}</h3><p>{{pr5_p}}</p></div></li>
-      </ol>
+      <ul class="rows">
+        <li><a class="row-link" href="{{serve_href}}#health"><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="9" r="3.5"/><circle cx="8" cy="23" r="3.5"/><circle cx="24" cy="23" r="3.5"/><path d="M14 12l-4 8M18 12l4 8M12 23h8"/></svg></span><span class="row-body"><h3>{{t1_h}}</h3><p>{{t1_p}}</p></span><span class="chev" aria-hidden="true"></span></a></li>
+        <li><a class="row-link" href="{{serve_href}}#agencies"><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13 16 6l12 7M7 13v11M13 13v11M19 13v11M25 13v11M4 26h24"/></svg></span><span class="row-body"><h3>{{t2_h}}</h3><p>{{t2_p}}</p></span><span class="chev" aria-hidden="true"></span></a></li>
+        <li><a class="row-link" href="{{serve_href}}#governments"><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="11"/><path d="M5 16h22M16 5c-4 4-4 18 0 22M16 5c4 4 4 18 0 22"/></svg></span><span class="row-body"><h3>{{t3_h}}</h3><p>{{t3_p}}</p></span><span class="chev" aria-hidden="true"></span></a></li>
+      </ul>
+      <p class="more"><a class="link-arrow" href="{{serve_href}}">{{more_serve}}</a></p>
     </div>
   </section>
 
@@ -76,6 +59,7 @@
         <li class="step"><h3>{{s5_h}}</h3><p>{{s5_p}}</p></li>
       </ol>
       <p class="note">{{appr_note}}</p>
+      <p class="more"><a class="link-arrow" href="{{approach_href}}">{{more_approach}}</a></p>
     </div>
   </section>
 
@@ -87,55 +71,36 @@
         <h2 id="fw-title">{{fw_h2}}</h2>
         <p class="lede">{{fw_lede}}</p>
       </div>
-
-      <div class="fw-group">
-        <h3>{{g1_h}}<small>{{g1_sub}}</small></h3>
-        <ul class="fw-list">
-          <li><span class="abbr" dir="ltr">CIA</span><div><strong>{{cia_n}}</strong><span>{{cia_d}}</span></div></li>
-          <li><span class="abbr" dir="ltr">ISF</span><div><strong>{{isf_n}}</strong><span>{{isf_d}}</span></div></li>
-          <li><span class="abbr" dir="ltr">SDS</span><div><strong>{{sds_n}}</strong><span>{{sds_d}}</span></div></li>
-          <li><span class="abbr" dir="ltr">MQAS</span><div><strong>{{mqas_n}}</strong><span>{{mqas_d}}</span></div></li>
-        </ul>
+      <div class="fw-index">
+        <div>
+          <h3>{{g1_h}}</h3>
+          <ul>
+            <li><a href="{{fw_href}}#cia"><span class="abbr" dir="ltr">CIA</span>{{cia_n}}</a></li>
+            <li><a href="{{fw_href}}#isf"><span class="abbr" dir="ltr">ISF</span>{{isf_n}}</a></li>
+            <li><a href="{{fw_href}}#sds"><span class="abbr" dir="ltr">SDS</span>{{sds_n}}</a></li>
+            <li><a href="{{fw_href}}#mqas"><span class="abbr" dir="ltr">MQAS</span>{{mqas_n}}</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>{{g2_h}}</h3>
+          <ul>
+            <li><a href="{{fw_href}}#sesra"><span class="abbr" dir="ltr">SESRA</span>{{sesra_n}}</a></li>
+            <li><a href="{{fw_href}}#nwdf"><span class="abbr" dir="ltr">NWDF</span>{{nwdf_n}}</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>{{g3_h}}</h3>
+          <ul>
+            <li><a href="{{fw_href}}#grpa"><span class="abbr" dir="ltr">GRPA</span>{{grpa_n}}</a></li>
+          </ul>
+        </div>
       </div>
-
-      <div class="fw-group">
-        <h3>{{g2_h}}<small>{{g2_sub}}</small></h3>
-        <ul class="fw-list">
-          <li><span class="abbr" dir="ltr">SESRA</span><div><strong>{{sesra_n}}</strong><span>{{sesra_d}}</span></div></li>
-          <li><span class="abbr" dir="ltr">NWDF</span><div><strong>{{nwdf_n}}</strong><span>{{nwdf_d}}</span></div></li>
-        </ul>
-      </div>
-
-      <div class="fw-group">
-        <h3>{{g3_h}}<small>{{g3_sub}}</small></h3>
-        <ul class="fw-list">
-          <li><span class="abbr" dir="ltr">GRPA</span><div><strong>{{grpa_n}}</strong><span>{{grpa_d}}</span></div></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- 6. Accountability -->
-  <section id="accountability" class="sheet sheet-white" aria-labelledby="acc-title">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">{{ac_eyebrow}}</p>
-        <h2 id="acc-title">{{ac_h2}}</h2>
-        <p class="lede">{{ac_lede}}</p>
-      </div>
-      <ul class="tiles">
-        <li class="tile"><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4h10l6 6v18H9z"/><path d="M19 4v6h6M13 16h8M13 20h8M13 24h5"/></svg></span><h3>{{ac1_h}}</h3><p>{{ac1_p}}</p></li>
-        <li class="tile"><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="14" cy="14" r="8"/><path d="M20 20l7 7M10.5 14l2.5 2.5 4.5-5"/></svg></span><h3>{{ac2_h}}</h3><p>{{ac2_p}}</p></li>
-        <li class="tile"><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="5" width="20" height="23" rx="2"/><path d="M12 5V3h8v2M10 13l2 2 3-3M10 21l2 2 3-3M18 14h5M18 22h5"/></svg></span><h3>{{ac3_h}}</h3><p>{{ac3_p}}</p></li>
-        <li class="tile"><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 27h22M8 23v-6M14 23V11M20 23v-9M26 23V6"/></svg></span><h3>{{ac4_h}}</h3><p>{{ac4_p}}</p></li>
-        <li class="tile"><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="4"/><circle cx="22" cy="12" r="3"/><path d="M4 26c0-4 3-7 7-7s7 3 7 7M18 20c1-1 2.5-1.5 4-1.5 3 0 6 2.5 6 6"/></svg></span><h3>{{ac5_h}}</h3><p>{{ac5_p}}</p></li>
-        <li class="tile"><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4l10 4v7c0 6.5-4.3 11-10 13-5.7-2-10-6.5-10-13V8z"/><path d="M11.5 16l3 3 6-6.5"/></svg></span><h3>{{ac6_h}}</h3><p>{{ac6_p}}</p></li>
-      </ul>
+      <p class="more"><a class="link-arrow" href="{{fw_href}}">{{more_fw}}</a></p>
     </div>
   </section>
 
   <!-- 7. Leadership -->
-  <section id="leadership" class="sheet sheet-mist" aria-labelledby="lead-title">
+  <section id="leadership" class="sheet sheet-white" aria-labelledby="lead-title">
     <div class="wrap lead-grid">
       <div class="lead-copy">
         <p class="eyebrow">{{lead_eyebrow}}</p>
@@ -161,7 +126,7 @@
   </section>
 
   <!-- 8. FAQ -->
-  <section id="faq" class="sheet sheet-white" aria-labelledby="faq-title">
+  <section id="faq" class="sheet sheet-mist" aria-labelledby="faq-title">
     <div class="wrap faq-grid">
       <div class="section-head">
         <p class="eyebrow">{{faq_eyebrow}}</p>
